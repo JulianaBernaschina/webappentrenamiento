@@ -39,6 +39,80 @@
           <li> <a href="#footer"> VER MÁS </a></li>
         </section>
      <section id="anotate">
+      <!--aca arranca algo raro-->
+      <p id="paso"></p>
+  <p id="pregunta"></p>
+  <div id="opciones"></div>
+  <button id="btn" disabled onclick="siguiente()">Siguiente</button>
+
+  <div id="resultado" style="display:none">
+    <p id="res-titulo"></p>
+    <p id="res-desc"></p>
+    <button onclick="reiniciar()">Volver a empezar</button>
+  </div>
+
+  <script>
+    const preguntas = [
+      { q: "¿Qué te sentis que te esta faltando hoy en tu relación con el movimiento?", opts: ["Sentir más conexión con mi cuerpo y dejar de exigirme tanto", "Entender por qué me cuesta sostener lo que empiezo", "Tener herramientas para acompañar mejor a otras personas"] },
+      { q: "Cuando pensás en entrenar o moverte, ¿qué te pesa más?", opts: ["Me desconecto o lo hago en automático", "Abandono o pierdo consistencia","Es mi espacio de conexión, lo valoro y preservo"] },
+      { q: "¿Desde qué lugar querés trabajar el movimiento hoy?", opts: ["Desde mi propia experiencia corporal", "Desde ambas, pero empezando por mí", "Desde mi rol como profesional del movimiento"] },
+      { q: "¿Qué tipo de contenido te resulta más valioso ahora?", opts: ["Prácticas guiadas, pausas, ejercicios de registro", "Espacios para frenar y entender qué me pasa al moverme"], "Herramientas, marcos teóricos y casos aplicados" },
+      { q: "¿Qué resultado te gustaría lograr en los próximos meses?", opts: ["Construir un hábito de movimiento más amable y sostenido", "Dejar de empezar y abandonar constantemente", "Lograr adquirir conocimiento teoricos y practicos"] }
+    ];
+
+    const resultados = {
+      bien:  { t: "Experiencia corporal consciente"},
+      mal:   { t: "Rol profesional presente" }
+    };
+
+    let actual = 0, puntaje = [], elegido = null;
+
+    function mostrar() {
+      document.getElementById('paso').textContent = "Pregunta " + (actual + 1) + " de " + preguntas.length;
+      document.getElementById('pregunta').textContent = preguntas[actual].q;
+      const div = document.getElementById('opciones');
+      div.innerHTML = '';
+      preguntas[actual].opts.forEach((op, i) => {
+        const btn = document.createElement('button');
+        btn.textContent = op;
+        btn.onclick = () => { elegido = i; document.getElementById('btn').disabled = false; };
+        div.appendChild(btn);
+        div.appendChild(document.createElement('br'));
+      });
+      elegido = null;
+      const btn = document.getElementById('btn');
+      btn.disabled = true;
+      btn.textContent = actual === preguntas.length - 1 ? 'Ver resultado' : 'Siguiente';
+    }
+
+    function siguiente() {
+      puntaje.push([2, 1, 0][elegido]);
+      actual++;
+      if (actual >= preguntas.length) {
+        const total = puntaje.reduce((a, b) => a + b, 0);
+        const r = resultados[total >= preguntas.length ? 'bien' : 'mal'];
+        document.getElementById('paso').style.display = 'none';
+        document.getElementById('pregunta').style.display = 'none';
+        document.getElementById('opciones').style.display = 'none';
+        document.getElementById('btn').style.display = 'none';
+        document.getElementById('resultado').style.display = 'block';
+        document.getElementById('res-titulo').textContent = r.t;
+        document.getElementById('res-desc').textContent = r.d;
+      } else {
+        mostrar();
+      }
+    }
+
+    function reiniciar() {
+      actual = 0; puntaje = []; elegido = null;
+      ['paso','pregunta','opciones','btn'].forEach(id => document.getElementById(id).style.display = '');
+      document.getElementById('resultado').style.display = 'none';
+      mostrar();
+    }
+
+    mostrar();
+  </script>
+      <!--aca termina lo raro-->
      <h1> ANOTATE </h1>
      <h3> Anotá tu consulta acá! </h3>
       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://calendly.com/juliana-bernaschina-comunidad/30min" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
