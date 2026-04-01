@@ -6,115 +6,77 @@
 </head>
 <body>
 
-  <div id="quiz-view">
-    <p id="step-label">Pregunta 1 de 5</p>
-    <p id="question-text"></p>
-    <div id="options"></div>
-    <button id="next-btn" disabled onclick="nextQuestion()">Siguiente</button>
-  </div>
+  <p id="paso"></p>
+  <p id="pregunta"></p>
+  <div id="opciones"></div>
+  <button id="btn" disabled onclick="siguiente()">Siguiente</button>
 
-  <div id="result-view" style="display:none">
-    <p id="result-title"></p>
-    <p id="result-desc"></p>
-    <button onclick="restart()">Volver a empezar</button>
+  <div id="resultado" style="display:none">
+    <p id="res-titulo"></p>
+    <p id="res-desc"></p>
+    <button onclick="reiniciar()">Volver a empezar</button>
   </div>
 
   <script>
-    const questions = [
-      {
-        q: "¿A qué hora te despertás normalmente?",
-        opts: ["Antes de las 7am, fresco y listo", "Entre 8 y 10am, con esfuerzo", "Más de las 10am o cuando puedo"]
-      },
-      {
-        q: "¿Cómo es tu alimentación en el día a día?",
-        opts: ["Como saludable la mayoría de las veces", "Mitad y mitad, depende del día", "Como lo que aparece, sin mucho orden"]
-      },
-      {
-        q: "¿Con qué frecuencia hacés actividad física?",
-        opts: ["Varios días a la semana", "De vez en cuando, sin rutina fija", "Casi nunca o nada"]
-      },
-      {
-        q: "¿Cómo manejás tu tiempo libre?",
-        opts: ["Lo planifico y lo disfruto con intención", "Mezcla de descanso y pantallas", "Termino scrolleando sin saber cuánto pasó"]
-      },
-      {
-        q: "Antes de dormir, ¿qué solés hacer?",
-        opts: ["Rutina relajante: leer, respirar, sin pantallas", "A veces pongo el cel, a veces no", "Pantalla hasta que me quedo dormido"]
-      }
+    const preguntas = [
+      { q: "¿A qué hora te despertás?", opts: ["Antes de las 7am", "Entre 8 y 10am", "Después de las 10am"] },
+      { q: "¿Cómo es tu alimentación?", opts: ["Saludable casi siempre", "Mitad y mitad", "Sin orden"] },
+      { q: "¿Hacés actividad física?", opts: ["Varios días por semana", "De vez en cuando", "Casi nunca"] },
+      { q: "¿Cómo usás tu tiempo libre?", opts: ["Con intención", "Mezcla de todo", "Scrolleando sin parar"] },
+      { q: "¿Qué hacés antes de dormir?", opts: ["Rutina sin pantallas", "A veces pantalla", "Pantalla hasta dormirme"] }
     ];
 
-    const results = {
-      disciplinado: {
-        title: "Hábitos sólidos",
-        desc: "Tenés una base firme. No es perfección, es consistencia. Seguí construyendo sobre eso."
-      },
-      caos: {
-        title: "Hábitos en construcción",
-        desc: "Hay intención, pero falta estructura. Un solo hábito anclado puede cambiar el resto. Elegí uno y empezá esta semana."
-      }
+    const resultados = {
+      bien:  { t: "Hábitos sólidos",         d: "Tenés consistencia. Seguí construyendo." },
+      mal:   { t: "Hábitos en construcción", d: "Elegí un hábito y empezá esta semana." }
     };
 
-    let current = 0;
-    let scores = [];
-    let selected = null;
-    const scoreMap = { 0: 2, 1: 1, 2: 0 };
+    let actual = 0, puntaje = [], elegido = null;
 
-    function render() {
-      const q = questions[current];
-      document.getElementById('step-label').textContent = "Pregunta " + (current + 1) + " de " + questions.length;
-      document.getElementById('question-text').textContent = q.q;
-
-      const optsEl = document.getElementById('options');
-      optsEl.innerHTML = '';
-      q.opts.forEach(function(opt, i) {
+    function mostrar() {
+      document.getElementById('paso').textContent = "Pregunta " + (actual + 1) + " de " + preguntas.length;
+      document.getElementById('pregunta').textContent = preguntas[actual].q;
+      const div = document.getElementById('opciones');
+      div.innerHTML = '';
+      preguntas[actual].opts.forEach((op, i) => {
         const btn = document.createElement('button');
-        btn.textContent = opt;
-        btn.onclick = function() { selectOpt(i); };
-        optsEl.appendChild(btn);
-        optsEl.appendChild(document.createElement('br'));
+        btn.textContent = op;
+        btn.onclick = () => { elegido = i; document.getElementById('btn').disabled = false; };
+        div.appendChild(btn);
+        div.appendChild(document.createElement('br'));
       });
-
-      selected = null;
-      const nextBtn = document.getElementById('next-btn');
-      nextBtn.disabled = true;
-      nextBtn.textContent = current === questions.length - 1 ? 'Ver resultado' : 'Siguiente';
+      elegido = null;
+      const btn = document.getElementById('btn');
+      btn.disabled = true;
+      btn.textContent = actual === preguntas.length - 1 ? 'Ver resultado' : 'Siguiente';
     }
 
-    function selectOpt(i) {
-      selected = i;
-      document.getElementById('next-btn').disabled = false;
-    }
-
-    function nextQuestion() {
-      scores.push(scoreMap[selected]);
-      current++;
-      if (current >= questions.length) {
-        showResult();
+    function siguiente() {
+      puntaje.push([2, 1, 0][elegido]);
+      actual++;
+      if (actual >= preguntas.length) {
+        const total = puntaje.reduce((a, b) => a + b, 0);
+        const r = resultados[total >= preguntas.length ? 'bien' : 'mal'];
+        document.getElementById('paso').style.display = 'none';
+        document.getElementById('pregunta').style.display = 'none';
+        document.getElementById('opciones').style.display = 'none';
+        document.getElementById('btn').style.display = 'none';
+        document.getElementById('resultado').style.display = 'block';
+        document.getElementById('res-titulo').textContent = r.t;
+        document.getElementById('res-desc').textContent = r.d;
       } else {
-        render();
+        mostrar();
       }
     }
 
-    function showResult() {
-      const total = scores.reduce(function(a, b) { return a + b; }, 0);
-      const pct = total / (questions.length * 2);
-      const key = pct >= 0.5 ? 'disciplinado' : 'caos';
-      const r = results[key];
-
-      document.getElementById('quiz-view').style.display = 'none';
-      document.getElementById('result-view').style.display = 'block';
-      document.getElementById('result-title').textContent = r.title;
-      document.getElementById('result-desc').textContent = r.desc;
+    function reiniciar() {
+      actual = 0; puntaje = []; elegido = null;
+      ['paso','pregunta','opciones','btn'].forEach(id => document.getElementById(id).style.display = '');
+      document.getElementById('resultado').style.display = 'none';
+      mostrar();
     }
 
-    function restart() {
-      current = 0; scores = []; selected = null;
-      document.getElementById('result-view').style.display = 'none';
-      document.getElementById('quiz-view').style.display = 'block';
-      render();
-    }
-
-    render();
+    mostrar();
   </script>
 
 </body>
