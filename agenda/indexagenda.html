@@ -58,10 +58,16 @@
     <footer>
     <nav id="footer">
      <hr>
-            <h2> Cuerpo Presente</h2>
+     <img src="" alt="logo"></img>
             <h4> ENVIANOS TU CONSULTA</h4>
-            <h6> motivo de consulta </h6>
-            <h6> Email</h6> <h6> <strong> ENVIAR </strong></h6>
+         <form action= "https://formspree.io/f/{YOUR_FORM_ID}" method="POST" novalidate>
+                <label for= "email"></label> <br> 
+           <imput type="email"id="email"name="email"placeholder="tuemail@correo.com" requiered><br><br>
+
+                <label for= "message"></label> <br> 
+           <textarea id="message" name="message" rows="5" placeholder="Motivo de consulta" requiered> </textarea>
+               <button type ="submit"> Enviar</button>
+           </form>
             <H4> Contacto</H4> <h6> También podes visitar nuestras redes!</h6>
          <ul> 
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> instagram </a></li>
