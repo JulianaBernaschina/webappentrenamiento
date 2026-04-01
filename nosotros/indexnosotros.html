@@ -60,11 +60,17 @@
       </main>  
         <footer> 
         <hr>
-            <h2> Cuerpo Presente</h2>
+           <img src="" alt="logo"></img>
             <h4> ENVIANOS TU CONSULTA</h4>
-            <h6> motivo de consulta </h6>
-            <h6> Email</h6> <h6> <strong> ENVIAR </strong></h6>
-            <H4> Contacto</H4> <h6> También podes visitar nuestras redes!</h6>
+         <form action= "https://formspree.io/f/{YOUR_FORM_ID}" method="POST" novalidate>
+                <label for= "email"></label> <br> 
+           <imput type="email"id="email"name="email"placeholder="tuemail@correo.com" requiered><br><br>
+
+                <label for= "message"></label> <br> 
+           <textarea id="message" name="message" rows="5" placeholder="Motivo de consulta" requiered> </textarea>
+               <button type ="submit"> Enviar</button>
+           </form>
+               <H4> Contacto</H4> <h6> También podes visitar nuestras redes!</h6>
          <ul> 
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> instagram </a></li>
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> linkedin </a></li>
@@ -72,23 +78,15 @@
          </ul>
             <ul> 
                 <li> <a href="../index.html"> <h3>Inicio</h3> </a>
-                <ul> 
-                    <Li> <a href="../index.html"><h6> Movimineto consciente</h6> </a></Li>
-                    <li> <a href="../index.html/#nuestros"><h6>Enfoques </h6> </a></li>
-                    <li> <a href="../index.html/#recursos"><h6>Recursos </h6> </a></li>
-                    <li> <a href="../index.html/#Testimonios"><h6> Testimonios </h6> </a></li>
-                </ul></li>
-                <Li><a href="../nosotros/indexnosotros.html"><h3> nosotros </h3> </a>
+                </li>
+                <Li><a href="indexnosotros.html"><h3> nosotros </h3> </a>
                 <ul> 
                     <Li><a href = "#entende">  <h6> entendé tu cuerpo </h6> </a> </Li>
                     <li>  <a href = "#formacion"><h6> nuestra formación</h6> </a></li>
                     <li> <a href = "#contenidos"> <h6> contenidos </h6> </li>
                 </ul></Li>
-                 <Li> <a href="../indexagenda.html"><h3> Agenda </h3> </a>
-                <ul> 
-                    <Li> <h6> <a href= "../indexadgenda.html/"> Calendario</h6> </a> </Li>
-                    <li> <h6> Anotate <a href= "../indexadgenda.html/"> </h6> </a></li>
-                </ul></Li>
+                 <Li> <a href="../agenda/indexagenda.html"><h3> Agenda </h3> </a>
+                </Li>
             </ul>
         </footer>        
 </html>
