@@ -19,16 +19,16 @@
 
   <script>
     const preguntas = [
-      { q: "¿A qué hora te despertás?", opts: ["Antes de las 7am", "Entre 8 y 10am", "Después de las 10am"] },
-      { q: "¿Cómo es tu alimentación?", opts: ["Saludable casi siempre", "Mitad y mitad", "Sin orden"] },
-      { q: "¿Hacés actividad física?", opts: ["Varios días por semana", "De vez en cuando", "Casi nunca"] },
-      { q: "¿Cómo usás tu tiempo libre?", opts: ["Con intención", "Mezcla de todo", "Scrolleando sin parar"] },
-      { q: "¿Qué hacés antes de dormir?", opts: ["Rutina sin pantallas", "A veces pantalla", "Pantalla hasta dormirme"] }
+      { q: "¿Qué te sentis que te esta faltando hoy en tu relación con el movimiento?", opts: ["Sentir más conexión con mi cuerpo y dejar de exigirme tanto", "Tener herramientas para acompañar mejor a otras personas", "Entender por qué me cuesta sostener lo que empiezo"] },
+      { q: "Cuando pensás en entrenar o moverte, ¿qué te pesa más?", opts: ["Me desconecto o lo hago en automático","Es mi espacio de conexión, lo valoro y preservo", "Abandono o pierdo consistencia"] },
+      { q: "¿Desde qué lugar querés trabajar el movimiento hoy?", opts: ["Desde mi propia experiencia corporal", "Desde mi rol como profesional del movimiento", "Desde ambas, pero empezando por mí"] },
+      { q: "¿Qué tipo de contenido te resulta más valioso ahora?", opts: ["Prácticas guiadas, pausas, ejercicios de registro", "Herramientas, marcos teóricos y casos aplicados", "Espacios para frenar y entender qué me pasa al moverme"] },
+      { q: "¿Qué resultado te gustaría lograr en los próximos meses?", opts: ["Construir un hábito de movimiento más amable y sostenido", "Lograr adquirir conocimiento teoricos y practicos", "Dejar de empezar y abandonar constantemente"] }
     ];
 
     const resultados = {
-      bien:  { t: "Hábitos sólidos",         d: "Tenés consistencia. Seguí construyendo." },
-      mal:   { t: "Hábitos en construcción", d: "Elegí un hábito y empezá esta semana." }
+      bien:  { t: "Experiencia corporal consciente"},
+      mal:   { t: "Rol profesional presente" }
     };
 
     let actual = 0, puntaje = [], elegido = null;
