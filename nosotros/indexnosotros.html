@@ -55,85 +55,37 @@
                 <section id= "contenidos"> 
                   <h1> CONTENIDOS</h1>  
         <img src="../fotonosotrosmujer.jpegalt="mujeres haciendo espinales">
-                   <div id="acordeon"></div>
+                   <div id="acordeon">
+                       
+                            <ul> 
+                            <li> Lecturas <button onclick="toggleMenu()">Abrir menú ▼</button>
+                                      <div class="dropdown-content" id="menu">
+                                          <ul>
+                                        <li>Texto 1</li>
+                                        <li>Texto</li>
+                                        <li>Opción 3</li>
+                                        </ul>
+                                      </div></li>
+                                 <li> Videos <button onclick="toggleMenu()">Abrir menú ▼</button>
+                                      <div class="dropdown-content" id="menu">
+                                        <p>Opción 1</p>
+                                        <p>Opción 2</p>
+                                        <p>Opción 3</p>
+                                      </div></li></li>   
+                                <li> Podcasts <button onclick="toggleMenu()">Abrir menú ▼</button>
+                                <ul>
+                                      <div class="dropdown-content" id="menu">
+                                    <li> <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0C8Fnhxqw75GAbSqrT961Q?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> </li>
+                                    <li> <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2ImJ41hx9V3giw0F0edZPf?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+                                    <li> <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1k11GgnP28mt40jCrhd56R?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+                                       </div>
+                                      </li> 
+                                     
+                                </ul>
+                            </ul>
+                       
+                   </div>
                     <!--aca arranca el desplegable-->
-  <script>
-    const items = [
-      {
-        titulo: "Lecturas",
-        opciones: [
-          { texto: "Artículo 1", url: "https://ejemplo.com/articulo1" },
-          { texto: "Artículo 2", url: "https://ejemplo.com/articulo2" },
-          { texto: "Artículo 3", url: "https://ejemplo.com/articulo3" }
-        ]
-      },
-      {
-        titulo: "Videos",
-        opciones: [
-          { texto: "Video 1", url: "https://ejemplo.com/video1" },
-          { texto: "Video 2", url: "https://ejemplo.com/video2" },
-          { texto: "Video 3", url: "https://ejemplo.com/video3" }
-        ]
-      },
-      {
-        titulo: "Podcasts",
-        opciones: [
-          { texto: "Episodio 1", url: "https://ejemplo.com/episodio1" },
-          { texto: "Episodio 2", url: "https://ejemplo.com/episodio2" },
-          { texto: "Episodio 3", url: "https://ejemplo.com/episodio3" }
-        ]
-      }
-    ];
-
-    const contenedor = document.getElementById('acordeon');
-
-    items.forEach((item, i) => {
-      const id = 'panel-' + i;
-      const flechaId = 'flecha-' + i;
-
-      const header = document.createElement('div');
-      header.style.display = 'flex';
-      header.style.justifyContent = 'space-between';
-      header.style.cursor = 'pointer';
-      header.onclick = () => toggle(id, flechaId);
-
-      const titulo = document.createElement('span');
-      titulo.textContent = item.titulo;
-
-      const flecha = document.createElement('span');
-      flecha.id = flechaId;
-      flecha.innerHTML = '&#9660;';
-
-      header.appendChild(titulo);
-      header.appendChild(flecha);
-
-      const panel = document.createElement('div');
-      panel.id = id;
-      panel.style.display = 'none';
-
-      item.opciones.forEach(op => {
-        const p = document.createElement('p');
-        const a = document.createElement('a');
-        a.textContent = op.texto;
-        a.href = op.url;
-        a.target = '_blank';
-        p.appendChild(a);
-        panel.appendChild(p);
-      });
-
-      contenedor.appendChild(header);
-      contenedor.appendChild(panel);
-      contenedor.appendChild(document.createElement('hr'));
-    });
-
-    function toggle(id, flechaId) {
-      const panel = document.getElementById(id);
-      const flecha = document.getElementById(flechaId);
-      const abierto = panel.style.display === 'block';
-      panel.style.display = abierto ? 'none' : 'block';
-      flecha.innerHTML = abierto ? '&#9660;' : '&#9650;';
-    }
-  </script>
                 </section>     
             </body>
       </main>  
