@@ -1,1 +1,21 @@
+/* comentarios */
+
+/*regla de estilos- normas elijo con selector y le doy estilo
+selector { 
+propiedad: valor;
+propiedad: valor;
+} */
+
+
+h1 {
+  color: rgb(125, 72, 183);
+  background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: rgb(31, 27, 36);
+  background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
