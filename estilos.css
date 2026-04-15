@@ -54,7 +54,7 @@ a {
 }
 
 .subrayado {
-  border-bottom: 5px; color: rgb(0, 255, 195);
+  border-bottom: 10px solid rgb(182, 140, 248);
 }
 
 ul{
