@@ -27,7 +27,12 @@ a {
 }
 
 /*selector li*/
-
+#arcvhivocarpeta {
+  color: rgb(38, 35, 43);
+  background-color: rgb(211, 158, 239);
+  font-size: 16px;  
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
