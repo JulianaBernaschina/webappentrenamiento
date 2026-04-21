@@ -234,6 +234,10 @@ ul{
   list-style: none;
     
 }
+/*footer*/
+footer{ 
+  background-color: #ddd6f0;
+}
 
 
 #footer{ 
