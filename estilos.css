@@ -273,8 +273,7 @@ section:has(> p > em) p {
 }
 section:has(> p > em) em {
   font-style: normal;
-  color: #7d48b7;
-}
+  box-shadow: inset 0 -0.5em 0 0 rgb(139, 238, 197,1); }
 
 /* FOOTER */
 footer {
