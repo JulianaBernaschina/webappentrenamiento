@@ -60,13 +60,13 @@ a {
 }
 /*movimiento*/ 
 #movimiento {
-  color: rgb(38, 35, 43);
-  background-color: rgb(211, 158, 239);
+
+  background-color: white
 
 }
 #movimiento h1 {
-    background-color: rgb(255, 0, 234);
-    color: beige; 
+    background-color: #927aaa;
+    color: #ded5e8; 
     size: 100%;
   }
 .imagenmov {
@@ -75,6 +75,7 @@ a {
   object-fit: left;
   display: block;
 }
+
 
 #nuestros {
   color: rgb(0, 0, 0);
@@ -94,7 +95,7 @@ a {
 /* La imagen ocupa la columna derecha en todas las filas */
 #recursosimagen {
   grid-column: 2;
-  grid-row: 1 / -1; /* desde la primera hasta la última fila */
+  grid-row: 1 / -1; 
   width: 100%;
   height: 100%;
   object-fit: cover;
