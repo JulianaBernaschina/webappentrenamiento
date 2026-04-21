@@ -11,7 +11,35 @@ h1 , h2, h3, h4, h5, h6 {
   color: rgb(125, 72, 183);
   
     font-family: "Familjen Grotesk", sans-serif;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1.5px dashed #ccc;
+  border-bottom: 1.5px dashed #ccc;
+}
 
+nav ul li a {
+  display: block;
+  padding: 12px 32px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  color: #666;
+}
+
+nav ul li a#archivocarpeta {
+  background-color: #7EC8B4;
+  color: #054035;
+  font-weight: 500;
+}
 p {
   color: rgb(31, 27, 36);
  ;
