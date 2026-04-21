@@ -100,6 +100,7 @@ nav ul li a#archivocarpeta {
   grid-template-columns: 1fr 1fr;
   background-color: #d8d0e8;
 }
+
 #nuestros h2 {
   grid-column: 1 / -1;
   background-color: #c2ecd9;
@@ -110,33 +111,54 @@ nav ul li a#archivocarpeta {
   margin: 0;
   padding: 16px 24px;
   line-height: 1;
+  text-align: left;
 }
+
 #nuestros h3 {
   font-size: 22px;
   font-weight: 900;
   text-transform: uppercase;
   color: #111;
   margin: 0;
+  padding: 28px 28px 12px;
   line-height: 1.2;
+  align-self: start;
 }
+
 #nuestros p {
   font-size: 14px;
   color: #222;
   margin: 0;
   line-height: 1.6;
+  text-transform: none;
+  text-align: left;
+  align-self: start;
 }
-#nuestros em { font-style: normal; text-decoration: underline; }
 
-#nuestros h3:nth-of-type(1),
-#nuestros p:nth-of-type(1) {
-  padding: 28px 28px 0;
+#nuestros em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#nuestros h3:nth-of-type(1) {
+  grid-column: 1;
   border-right: 1px solid #b0a8c4;
 }
-#nuestros p:nth-of-type(1) { padding: 0 28px 40px; }
-#nuestros h3:nth-of-type(2),
-#nuestros p:nth-of-type(2) { padding: 28px 28px 0; }
-#nuestros p:nth-of-type(2) { padding: 0 28px 40px; }
 
+#nuestros p:nth-of-type(1) {
+  grid-column: 1;
+  padding: 0 28px 40px;
+  border-right: 1px solid #b0a8c4;
+}
+
+#nuestros h3:nth-of-type(2) {
+  grid-column: 2;
+}
+
+#nuestros p:nth-of-type(2) {
+  grid-column: 2;
+  padding: 0 28px 40px;
+}
 /* recursos */
 #recursos {
   display: grid;
