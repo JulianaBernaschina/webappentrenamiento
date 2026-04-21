@@ -281,13 +281,9 @@ footer {
   background-color: #ddd6f0;
   padding: 40px 32px 24px;
 }
+
 footer > a { display: block; margin-bottom: 24px; }
-footer h4 {
-  font-family: "Familjen Grotesk", sans-serif;
-  font-weight: 700;
-  color: #333;
-  margin: 0 0 12px;
-}
+
 footer form {
   background: #fff;
   border-radius: 12px;
@@ -295,6 +291,7 @@ footer form {
   max-width: 500px;
   margin: 0 auto 40px;
 }
+
 footer input, footer textarea {
   width: 100%;
   padding: 10px 14px;
@@ -306,7 +303,9 @@ footer input, footer textarea {
   margin-bottom: 12px;
   box-sizing: border-box;
 }
+
 footer textarea { resize: vertical; min-height: 80px; }
+
 footer button {
   background-color: #7d48b7;
   color: #fff;
@@ -319,29 +318,70 @@ footer button {
   display: block;
   margin: 0 auto;
 }
+
+/* Contacto + redes (están sueltos antes del #footer) */
+footer > h4 {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+footer > p {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 12px;
+}
+
+footer > ul {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+footer > ul li a {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Nav del footer */
 #footer {
+  background-color: #ddd6f0;
+  border-top: 1px solid #c8bfe0;
+  padding-top: 24px;
+}
+
+#footer > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
-  padding-top: 24px;
-  border-top: 1px solid #c8bfe0;
-  background-color: #ddd6f0;
+  padding: 0;
+  margin: 0;
 }
-#footer ul { padding: 0; margin: 0; }
+
 #footer > ul > li > a {
   font-family: "Familjen Grotesk", sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: #333;
   display: block;
   margin-bottom: 8px;
 }
+
+#footer > ul > li > ul {
+  padding: 0;
+  margin: 0;
+}
+
 #footer > ul > li > ul > li > a {
   font-size: 13px;
   color: #555;
   display: block;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 
 /* clases */
