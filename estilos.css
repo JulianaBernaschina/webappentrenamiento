@@ -11,6 +11,7 @@ h1 , h2, h3, h4, h5, h6 {
   color: rgb(125, 72, 183);
   
     font-family: "Familjen Grotesk", sans-serif;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -60,22 +61,44 @@ a {
 }
 /*movimiento*/ 
 #movimiento {
-
-  background-color: white
-
+  padding: 3rem 2rem;
+  background-color: white;
 }
+
 #movimiento h1 {
-    background-color: #927aaa;
-    color: #ded5e8; 
-    size: 100%;
-  }
-.imagenmov {
-  width: 50%;
-  height: 100%;
-  object-fit: left;
-  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 3rem;
 }
 
+#movimiento p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto subrayado con fondo verde */
+#movimiento mark {
+  background-color: #7de8c8;
+  text-decoration: underline;
+  padding: 0 2px;
+}
+
+/* Botón */
+#movimiento a {
+  display: inline-block;
+  background-color: #7de8c8;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
 
 #nuestros {
   color: rgb(0, 0, 0);
