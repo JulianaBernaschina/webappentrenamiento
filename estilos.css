@@ -30,17 +30,24 @@ a {
   font-size: 25px;  
   
 }
-
+/*movimiento*/ 
 #movimiento {
   color: rgb(38, 35, 43);
   background-color: rgb(211, 158, 239);
 
 }
-
 #movimiento h1 {
     background-color: rgb(255, 0, 234);
     color: beige; 
+    size: 100%;
   }
+.imagenmov {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 #nuestros {
   color: rgb(0, 0, 0);
   background-color: rgb(140, 226, 200);
@@ -57,14 +64,14 @@ a {
 
 }
 #recursos h3 {
-    background-color: rgb(255, 0, 234);
-    color: beige; 
+    background-color: #DED5E8;
+    color: #927aaa; 
   }
 
 .recursosimagen{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: left;
   display: block;
 }
 
