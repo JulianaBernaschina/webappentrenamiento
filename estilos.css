@@ -51,25 +51,8 @@ nav ul li a#archivocarpeta {
   color: #054035;
   font-weight: 500;
 }
-p {
-  color: rgb(31, 27, 36);
- 
-    font-family: "Geist", sans-serif;
-}
 
-
-a {
-  color: rgb(31, 27, 36);
-   text-decoration: none;
-   font-family: "Geist", sans-serif;
-}
-/*selector li*/
-#arcvhivocarpeta {
-  color: rgb(38, 35, 43);
-  font-size: 25px;  
-  
-}
-/* ─── MOVIMIENTO ─── */
+/* movimiento */
 #movimiento h1 {
   background-color: #ddd6f0;
   color: #6b5fa6;
@@ -111,7 +94,7 @@ a {
   align-self: flex-start;
 }
 
-/* ─── NUESTROS ENFOQUES ─── */
+/* nuestros */
 #nuestros {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -154,7 +137,7 @@ a {
 #nuestros p:nth-of-type(2) { padding: 28px 28px 0; }
 #nuestros p:nth-of-type(2) { padding: 0 28px 40px; }
 
-/* ─── RECURSOS ─── */
+/* recursos */
 #recursos {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -208,7 +191,7 @@ a {
   display: block;
 }
 
-/* ─── TESTIMONIOS ─── */
+/* testimonio*/
 #testimonios {
   background-color: #ddd6f0;
   padding: 30px 15px;
@@ -237,7 +220,7 @@ a {
 #testimonios div h6 { font-size: 13px; color: #111; margin: 8px 0 0; }
 #testimonios div h5 { font-size: 12px; color: #777; font-weight: 400; margin: 2px 0 0; }
 
-/* ─── CITA ─── */
+/*frase*/
 section:has(> p > em) {
   padding: 60px 40px;
   text-align: center;
@@ -257,28 +240,94 @@ section:has(> p > em) em {
   color: #7d48b7;
 }
 
-/*selector clase*/  
-
-.destacado{
-  color: rgb(38, 35, 43);
-  font-style: oblique;
-    
+/* FOOTER */
+footer {
+  background-color: #ddd6f0;
+  padding: 40px 32px 24px;
+}
+footer > a { display: block; margin-bottom: 24px; }
+footer h4 {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 12px;
+}
+footer form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+footer input, footer textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Geist", sans-serif;
+  font-size: 14px;
+  background: #f9f9f9;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+footer textarea { resize: vertical; min-height: 80px; }
+footer button {
+  background-color: #7d48b7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #c8bfe0;
+  background-color: #ddd6f0;
+}
+#footer ul { padding: 0; margin: 0; }
+#footer > ul > li > a {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+#footer > ul > li > ul > li > a {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  padding: 2px 0;
 }
 
-.subrayado {
-  box-shadow: inset 0 -0.5em 0 0 rgba(236, 161, 255, 1);
+/* clases */
+p {
+  color: rgb(31, 27, 36);
+ 
+    font-family: "Geist", sans-serif;
+}
+
+a {
+  color: rgb(31, 27, 36);
+   text-decoration: none;
+   font-family: "Geist", sans-serif;
+}
+/*selector li*/
+#arcvhivocarpeta {
+  color: rgb(38, 35, 43);
+  font-size: 25px;  
+  
 }
 ul{
   color: rgb(38, 35, 43);
-  list-style: none;
-    
-}
-/*footer*/
-footer{ 
-  background-color: #ddd6f0;
-}
-
-#footer{ 
-  background-color: #ddd6f0;
-} 
-
+  list-style: none;}
+.destacado { font-style: oblique; }
+.subrayado { box-shadow: inset 0 -0.5em 0 0 rgba(236, 161, 255, 1); }
