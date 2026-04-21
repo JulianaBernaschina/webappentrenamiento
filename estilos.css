@@ -46,7 +46,8 @@ nav ul li a:hover {
 }
 
 nav ul li a#archivocarpeta {
-  background-color: #7EC8B4;
+  background-color: rgba(139, 238, 197, 1);
+  border-radius: 8px;
   color: #054035;
   font-weight: 500;
 }
