@@ -11,14 +11,17 @@ h1 , h2, h3, h4, h5, h6 {
   color: rgb(125, 72, 183);
   
     font-family: "Familjen Grotesk", sans-serif;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 }
 nav ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1.5px dashed #ccc;
-  border-bottom: 1.5px dashed #ccc;
 }
 
 nav ul li a {
