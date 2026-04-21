@@ -74,10 +74,10 @@ a {
   background-color: white;
 }
 
-#movimientoh1 {
+#movimiento h1 {
   background-color: #ddd6f0;
   color: #6b5fa6;
-  font-size: 64px;
+  font-size: 100px;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
