@@ -14,7 +14,7 @@ propiedad: valor;
 }
 
 /* movimiento */
-#movimiento h1 { min-height: 1500px;
+#movimiento h1 { min-width: 1500px;
   background-color: #ddd6f0;
   color: #6b5fa6;
   font-size: 20px;
@@ -23,16 +23,19 @@ propiedad: valor;
   margin:20px;
   padding: 16px 32px;
 }
-.mov-contenido {min-height: 1500px;
+.mov-contenido {min-width: 1500px;
   display: grid;
   flex-direction: row;
 }
 
-#imagenmov {min-height: 1500px;
+#imagenmov {min-width: 1500px;
   width: 100%;
   object-fit: cover;
   filter: grayscale(100%);
   display: block;
+  object-fit: scale-down;
+  object-position: top;
+  justify-content: flex-start;
 
 }
 .mov-texto {
