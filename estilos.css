@@ -6,6 +6,40 @@ propiedad: valor;
 propiedad: valor;
 } */
 
+/*movile*/
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+/* movimiento */
+#movimiento h1 { min-height: 1500px;
+  background-color: #ddd6f0;
+  color: #6b5fa6;
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin:20px;
+  padding: 16px 32px;
+}
+.mov-contenido {min-height: 1500px;
+  display: grid;
+  flex-direction: row;
+}
+
+#imagenmov {min-height: 1500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+
+
+
+
+/*desktop*/
 /*agrupacion sectores*/
 h1 , h2, h3, h4, h5, h6 {
   color: rgb(125, 72, 183);
@@ -65,7 +99,7 @@ nav ul li a#archivocarpeta {
 }
 .mov-contenido {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  flex-direction: column;
 }
 
 #imagenmov {
@@ -381,15 +415,16 @@ footer > ul li a {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 20px;
   color: #333;
   display: block;
   margin-bottom: 8px;
+    flex-direction: column;
 }
 
 #footer > ul > li > ul {
-  padding: 0;
-  margin: 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 #footer > ul > li > ul > li > a {
