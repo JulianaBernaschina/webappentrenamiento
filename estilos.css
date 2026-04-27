@@ -13,6 +13,18 @@ propiedad: valor;
   align-items: center;
 }
 
+/*nav*/
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  padding: 10px 10px;
+}
+.nav-menu {
+  max-height: 0;
+  overflow: hidden;
+}
+
 /* movimiento */
 #movimiento h1 { 
   background-color: #ddd6f0;
@@ -85,14 +97,14 @@ header {
   align-items: center;
 }
 
-nav ul {
+nav ul { min-width: 1500px;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
+nav ul li a {min-width: 1500px;
   display: block;
   padding: 12px 32px;
   font-size: 13px;
@@ -103,11 +115,11 @@ nav ul li a {
   white-space: nowrap;
 }
 
-nav ul li a:hover {
+nav ul li a:hover {min-width: 1500px;
   color: #666;
 }
 
-nav ul li a#archivocarpeta {
+nav ul li a#archivocarpeta {min-width: 1500px;
   background-color: rgba(139, 238, 197, 1);
   border-radius: 8px;
   color: #054035;
@@ -137,21 +149,21 @@ nav ul li a#archivocarpeta {
   display: block;
 }
 
-.mov-texto {
+.mov-texto {min-width: 1500px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
 }
-#movimiento h3 {
+#movimiento h3 {min-width: 1500px;
   font-size: 32px;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
 }
 #movimiento em { box-shadow: inset 0 -0.5em 0 0 #8beeC5; }
-#movimiento a {
+#movimiento a {min-width: 1500px;
   display: inline-block;
   background-color: #7de8c8;
   color: #000;
