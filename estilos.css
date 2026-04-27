@@ -346,11 +346,11 @@ nav ul li a#archivocarpeta {min-width: 1500px;
 #testimonios div h5 { font-size: 12px; color: #777; font-weight: 400; margin: 2px 0 0; }
 
 /*frase*/
-section:has(> p > em) {
+#frase > p > em {
   padding: 60px 40px;
   text-align: center;
 }
-section:has(> p > em) p {
+#frase> p > em > p {
   font-size: clamp(20px, 3vw, 32px);
   font-weight: 700;
   font-family: "Familjen Grotesk", sans-serif;
@@ -360,7 +360,7 @@ section:has(> p > em) p {
   margin: 0 auto;
   text-transform: uppercase;
 }
-section:has(> p > em) em {
+#frase > p > em > em {
   font-style: normal;
   box-shadow: inset 0 -0.5em 0 0 rgb(139, 238, 197,1); }
 
