@@ -36,8 +36,9 @@ h1 , h2, h3, h4, h5, h6 {
     font-family: "Familjen Grotesk", sans-serif;
 }
 
+@media (min-width: 200px) {
+  /* Aquí van los estilos para pantallas de escritorio */
 /*movile*/
-
 #logo {
   display: flex;
   align-items: center;
@@ -104,9 +105,9 @@ h1 , h2, h3, h4, h5, h6 {
   border-radius: 12px;
   align-self: flex-start;
 }
+}
 
-
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   /* Aquí van los estilos para pantallas de escritorio */
   
 header {
