@@ -29,7 +29,12 @@ ul{
   list-style: none;}
 .destacado { font-style: oblique; }
 .subrayado { box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1); }
-
+/*agrupacion sectores*/
+h1 , h2, h3, h4, h5, h6 {
+  color: rgb(125, 72, 183);
+  
+    font-family: "Familjen Grotesk", sans-serif;
+}
 
 /*movile*/
 
@@ -101,15 +106,13 @@ ul{
 }
 
 
-
-
-/*desktop*/
-/*agrupacion sectores*/
-h1 , h2, h3, h4, h5, h6 {
-  color: rgb(125, 72, 183);
+@media (min-width: 768px) {
+  /* Aquí van los estilos para pantallas de escritorio */
   
-    font-family: "Familjen Grotesk", sans-serif;
-}
+
+
+
+
 header {
 
   display: flex;
@@ -122,14 +125,14 @@ header {
   align-items: center;
 }
 
-nav ul { min-width: 1500px;
+nav ul { 
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {min-width: 1500px;
+nav ul li a {
   display: block;
   padding: 12px 32px;
   font-size: 13px;
@@ -140,11 +143,11 @@ nav ul li a {min-width: 1500px;
   white-space: nowrap;
 }
 
-nav ul li a:hover {min-width: 1500px;
+nav ul li a:hover {
   color: #666;
 }
 
-nav ul li a#archivocarpeta {min-width: 1500px;
+nav ul li a#archivocarpeta {
   background-color: rgba(139, 238, 197, 1);
   border-radius: 8px;
   color: #054035;
@@ -152,7 +155,8 @@ nav ul li a#archivocarpeta {min-width: 1500px;
 }
 
 /* movimiento */
-#movimiento h1 {min-width: 1500px;
+#movimiento h1 
+{
   background-color: #ddd6f0;
   color: #6b5fa6;
   font-size: 100px;
@@ -498,3 +502,4 @@ footer > ul li a {
   padding: 3px 0;
 }
 
+}
