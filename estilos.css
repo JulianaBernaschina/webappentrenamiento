@@ -541,11 +541,13 @@ display: flex;
   filter: grayscale(100%);
   display: block;
 }
-#nosotros p {
-  padding: 32px;
+.intro{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+  flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: flex-start;
+
 }
 }
