@@ -527,9 +527,12 @@ footer > ul li a {
   padding: 16px 32px;
 }
 .entende {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
 }
 #nososotros img {
   width: 100%;
