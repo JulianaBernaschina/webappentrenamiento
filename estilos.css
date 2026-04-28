@@ -109,10 +109,6 @@ h1 , h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   /* Aquí van los estilos para pantallas de escritorio */
   
-
-
-
-
 header {
 
   display: flex;
@@ -167,7 +163,7 @@ nav ul li a#archivocarpeta {
 }
 .mov-contenido {min-width: 1500px;
   display: grid;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #imagenmov {min-width: 1500px;
