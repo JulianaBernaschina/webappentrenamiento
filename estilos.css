@@ -517,14 +517,15 @@ footer > ul li a {
  }
 /*body*/
 #nosotros h1 {
-  display: block;
-  background-color: rgb(149, 122, 170, 1) ;
-  color: rgb(222,213,232, 1);
-  font-size: 100px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 16px 32px;
+background-color: rgb(149, 122, 170, 1);
+color: rgb(222,213,232, 1);
+font-size: 50px;
+font-weight: 900;
+text-transform: uppercase;
+margin-block: 10px;
+display: block;
+align-items: center;
+padding: 12px;
 }
 .entende {
 display: flex;
@@ -548,6 +549,11 @@ display: flex;
 	justify-content: space-evenly;
 	align-items: flex-start;
 	align-content: flex-start;
-
+}
+#nosotros h2 {
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
 }
 }
