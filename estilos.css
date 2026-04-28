@@ -503,7 +503,7 @@ footer > ul li a {
 
 @media (min-width: 200px) {
   /* Aquí van los estilos para pantallas de escritorio */
-
+/*header*/
 #logo {
   display: flex;
   align-items: center;
@@ -515,4 +515,15 @@ footer > ul li a {
   padding: 0;
 
  }
+/*body*/
+#nosotros h1 {
+  display: block;
+  background-color: rgb(149, 122, 170, 1) ;
+  color: rgb(222,213,232, 1);
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 16px 32px;
+}
 }
