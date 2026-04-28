@@ -557,12 +557,12 @@ display: flex;
 .frasemovimiento {
   font-size: 15px;
 text-transform: uppercase;
-margin: 0;
+margin: 10px;
 display: block;
 justify-content: center;
 flex-wrap: wrap;
 text-align: center;
-
+text-transform: uppercase;
 }
 #nosotros h2 {
   font-size: 100px;
