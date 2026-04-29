@@ -555,7 +555,7 @@ footer button {
 
 /*nosotros*/
 /*body*/
-#h1:nt-of-type(1){
+#titulo h1 {
 background-color: rgba(149, 122, 170, 1);
 color: rgba(222,213,232, 1);
 font-size: 140px;
