@@ -656,6 +656,9 @@ font-size: 20px;
 font-family: "geist", sans-serif;
 font-weight: 500;
 position: absolute;
-top: 50%;
+top: 270%;
+width: 55%;
+text-transform: uppercase;
+margin: 20px;
 }
 }
