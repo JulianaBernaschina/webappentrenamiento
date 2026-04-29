@@ -1,5 +1,6 @@
 /* comentarios */
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Geist:wght@100..900&display=swap');
+
 /*regla de estilos- normas elijo con selector y le doy estilo
 selector { 
 propiedad: valor;
@@ -162,7 +163,7 @@ footer > ul li a {
   text-transform: uppercase;
   margin:20px;
   padding: 16px 32px;
-}
+}/*ok*/
 .mov-contenido {
   display: grid;
   flex-direction: column;
@@ -178,7 +179,7 @@ footer > ul li a {
   object-position: top;
   justify-content: flex-start;
 
-}
+}/*ok*/
 .mov-texto {
   padding: 32px;
   display: flex;
