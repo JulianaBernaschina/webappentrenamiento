@@ -594,6 +594,16 @@ align-items: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
 }
+#intro h3:nth-of-type(1){
+	color: #927AAA;
+    text-transform: uppercase;
+}
+#intro h4:nth-of-type(1){
+	color: #927AAA;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: lighter;
+}
 .frasemovimiento {
   font-size: 15px;
 margin: 10px;
@@ -602,6 +612,10 @@ justify-content: center;
 flex-wrap: wrap;
 text-align: center;
 text-transform: uppercase;
+}
+#formacion h3 {
+text-transform: uppercase;
+color: black;
 }
 #nosotros h2 {
   font-size: 100px;
