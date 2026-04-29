@@ -655,6 +655,7 @@ position: relative;
 font-size: 20px;
 font-family: "geist", sans-serif;
 font-weight: 500;
-text-box-edge: unset;
+position: absolute;
+top: 50%;
 }
 }
