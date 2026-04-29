@@ -650,7 +650,7 @@ display: flex;
 align-items: flex-start;
 position: relative;
 }/*ok*/
-#formacion p {
+#formacion p:nth-of-type(1) {
   color: white;
 font-size: 20px;
 font-family: "geist", sans-serif;
