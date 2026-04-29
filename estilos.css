@@ -555,7 +555,7 @@ footer button {
 
 /*nosotros*/
 /*body*/
-#nosotros h1 {
+#entende h1:nt-of-type(1){
 background-color: rgba(149, 122, 170, 1);
 color: rgba(222,213,232, 1);
 font-size: 140px;
@@ -607,7 +607,7 @@ margin-top: 120px;
     font-style: italic;
     font-weight: lighter;
 }
-.frasemovimiento {
+#frasemovimiento {
 font-size: 39px;
 margin: 20px;
 display: block;
