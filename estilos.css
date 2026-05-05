@@ -144,7 +144,7 @@ nav ul li a:hover {
 }
 
 .mov-texto {
-    font-size:30;
+    font-size:20;
  }
  
 #movimiento h2 {
@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
  
 .enfoque p {
-    font-size: 30px;
+    font-size: 20px;
     color: #222;
     margin: 0;
     line-height: 1.6;
@@ -248,7 +248,7 @@ nav ul li a:hover {
 }
  
 .recurso-item p {
-    font-size: 30px;
+    font-size: 20px;
     color: #333;
     margin: 0;
     line-height: 1.5;
@@ -296,7 +296,7 @@ nav ul li a:hover {
 .testimonios-intro {
     color: #666;
     margin: 0 0 12px;
-    font-size: 30px;
+    font-size: 20px;
 }
  
 .testimonio {
@@ -306,7 +306,7 @@ nav ul li a:hover {
 }
  
 .testimonio .cita {
-    font-size: 30px;
+    font-size: 20px;
     color: #333;
     margin: 0 0 16px;
 }
@@ -402,7 +402,7 @@ nav ul li a:hover {
 }
  
 #intro p {
-    font-size: 30px;
+    font-size: 20px;
     color: #333;
     line-height: 1.6;
     margin: 0;
