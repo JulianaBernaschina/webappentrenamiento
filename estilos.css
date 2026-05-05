@@ -731,7 +731,8 @@ footer button {
 @media (min-width: 760px) {
 
  p{ 
-  font-size:18px}
+  font-size:18px;
+ }
  
     /* Header desktop */
     header {
@@ -898,7 +899,7 @@ footer button {
     }
  
     #intro p {
-        font-size: 14px;
+        font-size: 18px;
     }
  
     #entende img {
