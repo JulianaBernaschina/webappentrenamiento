@@ -1,664 +1,1020 @@
-/* comentarios */
+/* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Geist:wght@100..900&display=swap');
-
-/*regla de estilos- normas elijo con selector y le doy estilo
-selector { 
-propiedad: valor;
-propiedad: valor;
-} */
-
-/* clases */
-p {
-  color: rgb(31, 27, 36);
  
+/*ESTILOS BASE*/
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    padding: 0;
     font-family: "Geist", sans-serif;
 }
-
+ 
+p {
+    color: rgb(31, 27, 36);
+    font-family: "Geist", sans-serif;
+    line-height: 1.6;
+}
+ 
 a {
-  color: rgb(31, 27, 36);
-   text-decoration: none;
-   font-family: "Geist", sans-serif;
+    color: rgb(31, 27, 36);
+    text-decoration: none;
+    font-family: "Geist", sans-serif;
 }
-/*selector li*/
-#arcvhivocarpeta {
-  color: rgb(38, 35, 43);
-  font-size: 25px;  
-  
+ 
+ul {
+    color: rgb(38, 35, 43);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-ul{
-  color: rgb(38, 35, 43);
-  list-style: none;}
-.destacado { font-style: oblique; }
-.subrayado { box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1); }
-em {box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1); }
-strong { font-weight: 500; font-family: familjen grotesk, sans-serif; color: rgb(38, 35, 43); }
-/*agrupacion sectores*/
-h1 , h2, h3, h4, h5, h6 {
-  color: rgb(125, 72, 183);
-  
+ 
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(125, 72, 183);
     font-family: "Familjen Grotesk", sans-serif;
 }
-
-
+ 
+em {
+    font-style: normal;
+    box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1);
+}
+ 
+strong {
+    font-weight: 500;
+    font-family: "Familjen Grotesk", sans-serif;
+    color: rgb(38, 35, 43);
+}
+ 
+.destacado {
+    font-style: oblique;
+}
+ 
+.subrayado {
+    box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1);
+}
+ 
+img {
+    max-width: 100%;
+    display: block;
+}
+ 
+/* HEADER mobile */
 header {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: #fff;
 }
-
+ 
 #logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
-
-nav ul { 
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ 
+#logo img {
+    height: 40px;
+    width: auto;
 }
-
+ 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+}
+ 
 nav ul li a {
-  display: block;
-  padding: 12px 32px;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #333;
-  white-space: nowrap;
+    display: block;
+    padding: 10px 14px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #333;
+    white-space: nowrap;
 }
-
+ 
 nav ul li a:hover {
-  color: #666;
+    color: #666;
 }
-
+ 
 nav ul li a#archivocarpeta {
-  background-color: rgba(139, 238, 197, 1);
-  border-radius: 8px;
-  color: #054035;
-  font-weight: 500;
+    background-color: rgba(139, 238, 197, 1);
+    border-radius: 8px;
+    color: #054035;
+    font-weight: 500;
 }
-
-/* Contacto + redes (están sueltos antes del #footer) */
-footer > h4 {
-  font-family: "Familjen Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #333;
-  margin: 0 0 8px;
+ 
+/* HOME mobile*/
+ 
+/* Movimiento consciente */
+#movimiento h1 {
+    background-color: #ddd6f0;
+    color: #927aaa;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 16px 20px;
+    line-height: 1;
 }
-
-footer > p {
-  font-size: 13px;
-  color: #555;
-  margin: 0 0 12px;
-}
-
-footer > ul {
-  display: flex;
-  gap: 16px;
-  padding: 0;
-  margin: 0 0 32px;
-}
-
-footer > ul li a {
-  font-size: 13px;
-  color: #555;
-}
-
-/* Nav del footer */
-#footer {
-  background-color: #ddd6f0;
-  border-top: 1px solid #c8bfe0;
-  padding-top: 24px;
-}
-
-#footer > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
-}
-
-#footer > ul > li > a {
-  font-family: "Familjen Grotesk", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  color: #333;
-  display: block;
-  margin-bottom: 8px;
+ 
+.mov-contenido {
+    display: flex;
     flex-direction: column;
 }
-
-#footer > ul > li > ul {
-  padding: 5px;
-  margin: 5px;
-}
-
-#footer > ul > li > ul > li > a {
-  font-size: 13px;
-  color: #555;
-  display: block;
-  padding: 3px 0;
-}
-
-
-
- /* Aquí van los estilos para pantallas de escritorio */
-
-@media (min-width: 200px) {
  
-/*movile*/
-/* movimiento */
-#movimiento h1 { 
-  background-color: #ddd6f0;
-  color: #6b5fa6;
-  font-size: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin:20px;
-  padding: 16px 32px;
-}/*ok*/
-.mov-contenido {
-  display: grid;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 #imagenmov {
-  width: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  display: block;
-  object-fit: scale-down;
-  object-position: top;
-  justify-content: flex-start;
-
-}/*ok*/
-.mov-texto {
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
-#movimiento h3 {
-  font-size: 16px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-}
-#movimiento em { box-shadow: inset 0 -0.5em 0 0 #8beeC5; }
-#movimiento a {
-  display: inline-block;
-  background-color: #7de8c8;
-  color: #000;
-  font-size: small;
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border-radius: 12px;
-  align-self: flex-start;
-}
-}
-
-/*nosotros*/
-/*body*/
-#nosotros h1 {
-background-color: rgba(149, 122, 170, 1);
-color: rgba(222,213,232, 1);
-font-size: 50px;
-font-weight: 900;
-text-transform: uppercase;
-margin-block: 10px;
-display: block;
-align-items: center;
-padding: 12px;
-margin-block-end: 0px;
-} /*ok*/
-.entende {
-display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: flex-start;
-}
-#nosotros img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  display: block;
-}/*ok*/
-.intro{
-  background-color: rgba(222,213,232, 1) ;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	align-content: flex-start;
-}
-.frasemovimiento {
-  font-size: 15px;
-text-transform: uppercase;
-margin: 10px;
-display: block;
-justify-content: center;
-flex-wrap: wrap;
-text-align: center;
-text-transform: uppercase;
-}
-#nosotros h2 {
-  font-size: 100px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-em {box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1); 
-}
-
-
-
- /* Aquí van los estilos para pantallas de escritorio */
-@media (min-width: 760px) {
  
-
-/* movimiento */
-#movimiento h1 
-{
-  background-color: #ddd6f0;
-  color: #6b5fa6;
-  font-size: 100px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 16px 32px;
-}
-.mov-contenido {
-  display: grid;
-  flex-direction: row;
-}
-
-#imagenmov {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  display: block;
-}
-
 .mov-texto {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
 }
-#movimiento h3 {
-  font-size: 32px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
+ 
+#movimiento h2 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    color: #1a1a1a;
 }
-#movimiento em { box-shadow: inset 0 -0.5em 0 0 #8beeC5; }
+ 
+#movimiento em {
+    box-shadow: inset 0 -0.5em 0 0 #8beec5;
+}
+ 
 #movimiento a {
-  display: inline-block;
-  background-color: #7de8c8;
-  color: #000;
-  font-size: small;
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border-radius: 12px;
-  align-self: flex-start;
+    display: inline-block;
+    background-color: #7de8c8;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 12px;
+    align-self: flex-start;
+    letter-spacing: 0.08em;
 }
-
-/* nuestros */
+ 
+/* Nuestros enfoques */
 #nuestros {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  background-color: #d8d0e8;
+    background-color: #d8d0e8;
 }
-
+ 
 #nuestros h2 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  background-color: #c2ecd9;
-  color: #5abf9a;
-  font-size: 64px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 16px 24px;
-  line-height: 1;
-  text-align: left;
+    background-color: #c2ecd9;
+    color: #5abf9a;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 14px 20px;
+    line-height: 1;
 }
-
-#nuestros h3:nth-of-type(1) {
-  grid-column: 1;
-  grid-row: 2;
-  padding: 28px 28px 12px;
-  border-right: 1px solid #b0a8c4;
-  font-size: 22px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #111;
-  margin: 0;
+ 
+.enfoque {
+    padding: 20px;
 }
-
-#nuestros p:nth-of-type(1) {
-  grid-column: 1;
-  grid-row: 3;
-  padding: 0 28px 40px;
-  border-right: 1px solid #b0a8c4;
-  font-size: 14px;
-  color: #222;
-  margin: 0;
-  line-height: 1.6;
-  text-transform: none;
+ 
+.enfoque h3 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #111;
+    margin: 0 0 12px;
 }
-/*nth-of-type -- a cual de los h responde*/
-#nuestros h3:nth-of-type(2) {
-  grid-column: 2;
-  grid-row: 2;
-  padding: 28px 28px 12px;
-  font-size: 22px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #111;
-  margin: 0;
+ 
+.enfoque p {
+    font-size: 14px;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
 }
-
-#nuestros p:nth-of-type(2) {
-  grid-column: 2;
-  grid-row: 3;
-  padding: 0 28px 40px;
-  font-size: 14px;
-  color: #222;
-  margin: 0;
-  line-height: 1.6;
-  text-transform: none;
-}
-
-
+ 
 #nuestros em {
-  box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1); 
+    box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 179, 1);
 }
-
-/* recursos */
+ 
+/* Recursos */
 #recursos {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  background-color: #dff0e8;
-  grid-template-rows: auto;
+    background-color: #dff0e8;
+    padding: 0;
 }
-
-#recursos h3 {
-  color: #5abf9a;
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 24px;
-  grid-column: 1;
+ 
+.recursos-lista {
+    padding: 24px 20px;
 }
-
-#recursos h4 {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #111;
-  margin: 0;
-  padding: 16px 24px 4px;
-  grid-column: 1;
+ 
+#recursos h2 {
+    color: #5abf9a;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 16px;
 }
-
-#recursos p {
-  font-size: 14px;
-  color: #333;
-  margin: 0;
-  line-height: 1.5;
-  padding: 0 24px 8px;
-  grid-column: 1;
+ 
+.recurso-item {
+    padding: 12px 0;
+    border-top: 1px solid #b8d9cb;
 }
-
-#recursos hr {
-  border: none;
-  border-top: 1px solid #b8d9cb;
-  margin: 8px 24px;
-  grid-column: 1;
+ 
+.recurso-item:first-of-type {
+    border-top: none;
 }
-
+ 
+.recurso-item h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #111;
+    margin: 0 0 6px;
+}
+ 
+.recurso-item p {
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+}
+ 
 #recursos a {
-  display: inline-block;
-  padding: 8px 19px;
-  border: 2px solid #333;
-  color: #333;
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin: 16px 24px;
-  grid-column: 1;
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 4px;
 }
-
+ 
 #recursosimagen {
-  grid-column: 2;
-  grid-row: 1 / 99;
-  width: 80%;
-  height: 70%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  min-height: 400px;
-  display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
-
-/* testimonio*/
+ 
+/* Testimonios */
 #testimonios {
-  background-color: #ddd6f0;
-  padding: 30px 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 12px;
+    background-color: #ddd6f0;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
-#testimonios h3 {
-  grid-column: 1 / -1;
-  font-size: 25px;
-  font-weight: 900;
-  color: #6b5fa6;
-  margin: 0;
-  text-transform:uppercase;
-}
-#testimonios > p {
-  grid-column: 1 / -1;
-  color: #666;
-  margin: 0;
-}
-#testimonios > div {
-  background: white;
-  border-radius: 16px;
-  padding: 25px;
-}
-#testimonios div p { font-size: 14px; color: #333; }
-#testimonios div h6 { font-size: 13px; color: #111; margin: 8px 0 0; }
-#testimonios div h5 { font-size: 12px; color: #777; font-weight: 400; margin: 2px 0 0; }
-
-/*frase*/
-#frase > p > em {
-  padding: 60px 40px;
-  text-align: center;
-}
-#frase> p > em > p {
-  font-size: clamp(20px, 3vw, 32px);
-  font-weight: 700;
-  font-family: "Familjen Grotesk", sans-serif;
-  color: #1a1a1a;
-  line-height: 1.3;
-  max-width: 700px;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-#frase > p > em > em {
-  font-style: normal;
-  box-shadow: inset 0 -0.5em 0 0 rgb(139, 238, 197,1); }
-
-/* FOOTER */
-footer {
-  background-color: #ddd6f0;
-  padding: 40px 32px 24px;
-}
-
-footer > a { display: block; margin-bottom: 24px; }
-
-footer form {
-  background: #fff;
-  border-radius: 12px;
-  padding: 32px;
-  max-width: 500px;
-  margin: 0 auto 40px;
-}
-
-footer input, footer textarea {
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: "Geist", sans-serif;
-  font-size: 14px;
-  background: #f9f9f9;
-  margin-bottom: 12px;
-  box-sizing: border-box;
-}
-
-footer textarea { resize: vertical; min-height: 80px; }
-
-footer button {
-  background-color: #7d48b7;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 28px;
-  font-size: 13px;
-  cursor: pointer;
-  text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
-}
-
-
-/*nosotros*/
-/*body*/
-#titulo h1 {
-background-color: rgba(149, 122, 170, 1);
-color: rgba(222,213,232, 1);
-font-size: 140px;
-font-weight: 900;
-text-transform: uppercase;
-margin-block: 10px;
-display: block;
-align-items: center;
-padding: 12px;
-text-align: center;
-margin-block-end: 0px;
-} /*ok*/
-
-#entende {
-background-color: rgba(222,213,232, 1);
-display: flex;
-flex-direction: row-reverse;
-flex-wrap: nowrap;
-justify-content: stretch;
-align-items: start;
-align-content: start;
-}
-#entende img {
- width: 50%;
-height: 100%;
-object-fit: cover;
-filter: grayscale(100%);
-display: flex;
-align-items: flex-start;
-}/*ok*/
-#intro{
- background-color: rgba(222,213,232, 1);
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: start;
-align-items: start;
-align-content: end;
-margin: 30px;
-margin-top: 120px;
-}
-#intro h3:nth-of-type(1){
-	color: #927AAA;
+ 
+#testimonios h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #6b5fa6;
+    margin: 0;
     text-transform: uppercase;
 }
-#intro h4:nth-of-type(1){
-	color: #927AAA;
+ 
+.testimonios-intro {
+    color: #666;
+    margin: 0 0 12px;
+    font-size: 14px;
+}
+ 
+.testimonio {
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+}
+ 
+.testimonio .cita {
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 16px;
+}
+ 
+.testimonio img {
+    width: auto;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+ 
+.testimonio .autor {
+    font-size: 13px;
+    color: #111;
+    font-weight: 600;
+    margin: 6px 0 0;
+}
+ 
+.testimonio .curso {
+    font-size: 12px;
+    color: #777;
+    margin: 2px 0 0;
+}
+ 
+/* Frase */
+#frase {
+    padding: 50px 24px;
+    text-align: center;
+    background: #fff;
+}
+ 
+#frase p {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Familjen Grotesk", sans-serif;
+    color: #1a1a1a;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+ 
+#frase em {
+    box-shadow: inset 0 -0.5em 0 0 rgba(139, 238, 197, 1);
+}
+ 
+/* NOSOTROS mobile*/
+ 
+/* Título */
+#titulo {
+    background-color: rgba(149, 122, 170, 1);
+    padding: 14px 20px;
+}
+ 
+#titulo h1 {
+    color: rgba(222, 213, 232, 1);
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+ 
+/* Entendé */
+#entende {
+    background-color: rgba(222, 213, 232, 1);
+    display: flex;
+    flex-direction: column;
+}
+ 
+#intro {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+#intro h2 {
+    color: #927aaa;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+}
+ 
+#intro h3 {
+    color: #927aaa;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 12px;
 }
+ 
+#intro p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+#entende img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+ 
+/* Frase movimiento */
 #frasemovimiento {
-font-size: 39px;
-margin: 20px;
-display: block;
-justify-content: center;
-flex-wrap: wrap;
-text-align: center;
-text-transform: uppercase;
-padding: 30px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
 }
-
-#nosotros h2:nth-of-type(1) {
-background-color: rgba(146,202,183, 1);
-color: rgba(198,234,222, 1);
-font-size: 140px;
-font-weight: 900;
-text-transform: uppercase;
-margin-block: 10px;
-display: block;
-align-items: center;
-padding: 12px;
-text-align: center;
-margin-block-end: 0px;
+ 
+#frasemovimiento p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Familjen Grotesk", sans-serif;
+    color: #1a1a1a;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
-#formacion h3 {
-text-transform: uppercase;
-color: black;
+ 
+/* Nuestra formación */
+#formacion h2 {
+    background-color: rgba(146, 202, 183, 1);
+    color: rgba(198, 234, 222, 1);
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 14px 20px;
+    line-height: 1;
 }
-#nosotros h2 {
-  font-size: 100px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
+ 
+.formacion-imagen {
+    position: relative;
 }
-#formacion img {
- width: 100%;
-height: 100%;
-object-fit: cover;
-filter: grayscale(100%);
-display: flex;
-align-items: flex-start;
-position: relative;
-}/*ok*/
-#formacion p:nth-of-type(1) {
-  color: white;
-font-size: 20px;
-font-family: "geist", sans-serif;
-font-weight: 500;
-position: absolute;
-top: 270%;
-width: 55%;
-text-transform: uppercase;
-margin: 20px;
+ 
+.formacion-imagen img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
+ 
+.frase-overlay {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+ 
+.formacion-cols {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.formacion-cols .col {
+    padding: 24px 20px;
+    border-bottom: 1px solid #b0a8c4;
+}
+ 
+.formacion-cols .col:last-child {
+    border-bottom: none;
+}
+ 
+.formacion-cols h3 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 12px;
+}
+ 
+.formacion-cols p {
+    font-size: 13px;
+    color: #222;
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+ 
+/* Contenidos */
+#contenidos h2 {
+    background-color: #ddd6f0;
+    color: #927aaa;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 14px 20px;
+    line-height: 1;
+}
+ 
+.contenidos-row {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.contenidos-row > img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+ 
+.acordeones {
+    padding: 16px 20px;
+    background: #fff;
+}
+ 
+details {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+}
+ 
+summary {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: none;
+}
+ 
+summary::-webkit-details-marker {
+    display: none;
+}
+ 
+summary::after {
+    content: "⌄";
+    font-size: 18px;
+    color: #999;
+    transition: transform 0.2s;
+}
+ 
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+ 
+details > p {
+    font-size: 13px;
+    color: #555;
+    margin: 12px 0 0;
+    line-height: 1.6;
+}
+ 
+.podcast-list {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.podcast-item {
+    background: #f3eded;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+ 
+.podcast-item h4 {
+    font-size: 13px;
+    font-family: "Geist", sans-serif;
+    color: #111;
+    margin: 0 0 4px;
+    text-transform: none;
+    font-weight: 600;
+}
+ 
+.podcast-meta {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+ 
+/* FOOTER mobile*/
+footer {
+    background-color: #ddd6f0;
+    padding: 32px 20px 20px;
+}
+ 
+footer > a {
+    display: block;
+    margin-bottom: 20px;
+}
+ 
+footer > a img {
+    height: 60px;
+    width: auto;
+}
+ 
+footer form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0 0 28px;
+}
+ 
+footer form h4 {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+ 
+footer input,
+footer textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Geist", sans-serif;
+    font-size: 13px;
+    background: #f9f9f9;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+ 
+footer textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+ 
+footer button {
+    background-color: #7d48b7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 0 auto;
+    letter-spacing: 0.08em;
+}
+ 
+#contacto-redes {
+    margin-bottom: 24px;
+}
+ 
+#contacto-redes h4 {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 6px;
+}
+ 
+#contacto-redes p {
+    font-size: 12px;
+    color: #555;
+    margin: 0 0 12px;
+}
+ 
+#contacto-redes ul {
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+}
+ 
+#contacto-redes ul li a {
+    font-size: 12px;
+    color: #555;
+}
+ 
+/* Footer nav */
+#footer {
+    background-color: transparent;
+    border-top: 1px solid #c8bfe0;
+    padding-top: 20px;
+}
+ 
+#footer > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+}
+ 
+#footer > ul > li > a {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+ 
+#footer > ul > li > ul {
+    padding: 0 0 0 4px;
+    margin: 0;
+}
+ 
+#footer > ul > li > ul > li > a {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    padding: 3px 0;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+ 
+/* ESTILOS DESKTOP */
+@media (min-width: 760px) {
+ 
+    /* Header desktop */
+    header {
+        padding: 20px 40px;
+    }
+ 
+    #logo img {
+        height: 50px;
+    }
+ 
+    nav ul li a {
+        padding: 12px 32px;
+        font-size: 13px;
+    }
+ 
+    /* Movimiento desktop */
+    #movimiento h1 {
+        font-size: 100px;
+        padding: 16px 32px;
+    }
+ 
+    .mov-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    #imagenmov {
+        height: 100%;
+        max-height: 600px;
+    }
+ 
+    .mov-texto {
+        padding: 60px 48px;
+        gap: 16px;
+    }
+ 
+    #movimiento h2 {
+        font-size: 32px;
+    }
+ 
+    #movimiento a {
+        font-size: 13px;
+        padding: 14px 28px;
+    }
+ 
+    /* Nuestros enfoques desktop */
+    #nuestros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+ 
+    #nuestros h2 {
+        grid-column: 1 / -1;
+        font-size: 100px;
+        padding: 16px 32px;
+    }
+ 
+    .enfoque {
+        padding: 32px;
+    }
+ 
+    .enfoque:first-of-type {
+        border-right: 1px solid #b0a8c4;
+    }
+ 
+    .enfoque h3 {
+        font-size: 22px;
+    }
+ 
+    /* Recursos desktop */
+    #recursos {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+    }
+ 
+    .recursos-lista {
+        padding: 28px 32px;
+    }
+ 
+    #recursos h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+ 
+    .recurso-item {
+        padding: 16px 0;
+    }
+ 
+    #recursos a {
+        display: inline-block;
+        padding: 10px 24px;
+        margin-top: 24px;
+        background: transparent;
+    }
+ 
+    #recursosimagen {
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+    }
+ 
+    /* Testimonios desktop */
+    #testimonios {
+        padding: 40px 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+ 
+    #testimonios h2 {
+        grid-column: 1 / -1;
+        font-size: 32px;
+    }
+ 
+    .testimonios-intro {
+        grid-column: 1 / -1;
+    }
+ 
+    .testimonio {
+        padding: 26px;
+    }
+ 
+    /* Frase desktop */
+    #frase {
+        padding: 80px 40px;
+    }
+ 
+    #frase p {
+        font-size: 28px;
+    }
+ 
+    /* Nosotros - Título desktop */
+    #titulo {
+        padding: 16px 32px;
+    }
+ 
+    #titulo h1 {
+        font-size: 100px;
+    }
+ 
+    /* Nosotros - Entendé desktop */
+    #entende {
+        flex-direction: row-reverse;
+        align-items: stretch;
+    }
+ 
+    #intro {
+        flex: 1;
+        padding: 48px 40px;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+ 
+    #intro h2 {
+        font-size: 32px;
+    }
+ 
+    #intro h3 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+ 
+    #intro p {
+        font-size: 14px;
+    }
+ 
+    #entende img {
+        flex: 1;
+        height: auto;
+        min-height: 400px;
+    }
+ 
+    /* Nosotros - Frase movimiento desktop */
+    #frasemovimiento {
+        padding: 60px 40px;
+    }
+ 
+    #frasemovimiento p {
+        font-size: 26px;
+    }
+ 
+    /* Nosotros - Formación desktop */
+    #formacion h2 {
+        font-size: 100px;
+        padding: 16px 32px;
+    }
+ 
+    .formacion-imagen img {
+        height: 380px;
+    }
+ 
+    .frase-overlay {
+        bottom: 32px;
+        left: 32px;
+        right: auto;
+        max-width: 50%;
+        font-size: 18px;
+    }
+ 
+    .formacion-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .formacion-cols .col {
+        padding: 32px;
+        border-bottom: none;
+    }
+ 
+    .formacion-cols .col:first-child {
+        border-right: 1px solid #b0a8c4;
+    }
+ 
+    .formacion-cols h3 {
+        font-size: 22px;
+    }
+ 
+    /* Nosotros - Contenidos desktop */
+    #contenidos h2 {
+        font-size: 100px;
+        padding: 16px 32px;
+    }
+ 
+    .contenidos-row {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+    }
+ 
+    .contenidos-row > img {
+        height: 100%;
+        min-height: 500px;
+    }
+ 
+    .acordeones {
+        padding: 32px;
+    }
+ 
+    summary {
+        font-size: 22px;
+    }
+ 
+    .podcast-item h4 {
+        font-size: 14px;
+    }
+ 
+    /* Footer desktop */
+    footer {
+        padding: 40px 40px 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo  form"
+            "redes nav"
+            "redes nav";
+        gap: 24px 40px;
+    }
+ 
+    footer > a {
+        grid-area: logo;
+        margin-bottom: 0;
+    }
+ 
+    footer form {
+        grid-area: form;
+        max-width: 500px;
+        margin: 0;
+        padding: 32px;
+    }
+ 
+    #contacto-redes {
+        grid-area: redes;
+        margin-bottom: 0;
+    }
+ 
+    #footer {
+        grid-area: nav;
+        border-top: none;
+        padding-top: 0;
+    }
+ 
+    #footer > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+ 
+    #footer > ul > li > a {
+        font-size: 13px;
+        letter-spacing: 0.15em;
+    }
 }
