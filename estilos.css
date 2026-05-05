@@ -486,13 +486,13 @@ nav ul li a:hover {
 .formacion-cols h3 {
     text-transform: uppercase;
     color: #111;
-    font-size: 18px;
+    font-size: 35px;
     font-weight: 900;
     margin: 0 0 12px;
 }
  
 .formacion-cols p {
-    font-size: 13px;
+    font-size: 30px;
     color: #222;
     margin: 0 0 10px;
     line-height: 1.6;
@@ -502,7 +502,7 @@ nav ul li a:hover {
 #contenidos h2 {
     background-color: #ddd6f0;
     color: #927aaa;
-    font-size: 28px;
+    font-size: 55px;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
