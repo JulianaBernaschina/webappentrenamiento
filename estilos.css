@@ -193,7 +193,7 @@ nav ul li a:hover {
 }
  
 .enfoque h3 {
-    font-size: 18px;
+    font-size: 35px;
     font-weight: 900;
     text-transform: uppercase;
     color: #111;
@@ -201,7 +201,7 @@ nav ul li a:hover {
 }
  
 .enfoque p {
-    font-size: 14px;
+    font-size: 30px;
     color: #222;
     margin: 0;
     line-height: 1.6;
@@ -223,7 +223,7 @@ nav ul li a:hover {
  
 #recursos h2 {
     color: #5abf9a;
-    font-size: 28px;
+    font-size: 55px;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0 0 16px;
@@ -241,13 +241,13 @@ nav ul li a:hover {
 .recurso-item h3 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 35px;
     color: #111;
     margin: 0 0 6px;
 }
  
 .recurso-item p {
-    font-size: 13px;
+    font-size: 30px;
     color: #333;
     margin: 0;
     line-height: 1.5;
@@ -260,7 +260,7 @@ nav ul li a:hover {
     border: 2px solid #333;
     color: #333;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 20px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-top: 20px;
@@ -285,7 +285,7 @@ nav ul li a:hover {
 }
  
 #testimonios h2 {
-    font-size: 24px;
+    font-size: 55px;
     font-weight: 900;
     color: #6b5fa6;
     margin: 0;
@@ -295,7 +295,7 @@ nav ul li a:hover {
 .testimonios-intro {
     color: #666;
     margin: 0 0 12px;
-    font-size: 14px;
+    font-size: 30px;
 }
  
 .testimonio {
@@ -305,7 +305,7 @@ nav ul li a:hover {
 }
  
 .testimonio .cita {
-    font-size: 14px;
+    font-size: 30px;
     color: #333;
     margin: 0 0 16px;
 }
@@ -318,14 +318,14 @@ nav ul li a:hover {
 }
  
 .testimonio .autor {
-    font-size: 13px;
+    font-size: 20px;
     color: #111;
     font-weight: 600;
     margin: 6px 0 0;
 }
  
 .testimonio .curso {
-    font-size: 12px;
+    font-size: 20px;
     color: #777;
     margin: 2px 0 0;
 }
@@ -338,7 +338,7 @@ nav ul li a:hover {
 }
  
 #frase p {
-    font-size: 18px;
+    font-size: 50px;
     font-weight: 700;
     font-family: "Familjen Grotesk", sans-serif;
     color: #1a1a1a;
