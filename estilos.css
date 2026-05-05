@@ -882,10 +882,10 @@ footer button {
  
     #intro {
         flex: 1;
-       padding: 200px 50px;
-        margin-top: 20px;
-        gap: 12px;
-        justify-content: flex-start;
+       gap: 12px;
+       justify-content: flex-end;
+       margin: 30px;
+}
     }
  
     #intro h2 {
