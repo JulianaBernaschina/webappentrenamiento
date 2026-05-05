@@ -104,8 +104,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #666;
 }
- 
-nav ul li a#archivocarpeta {
+ nav ul li a.actual {
     background-color: rgba(139, 238, 197, 1);
     border-radius: 8px;
     color: #054035;
