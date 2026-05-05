@@ -878,7 +878,8 @@ footer button {
  
     #intro {
         flex: 1;
-        padding: 48px 40px;
+       padding: 200px 50px;
+        margin-top: 20px;
         gap: 12px;
         justify-content: flex-start;
     }
@@ -900,7 +901,8 @@ footer button {
         flex: 1;
         height: auto;
         min-height: 400px;
-     max-width:50%;
+     max-width:60%;
+     object-fit: cover;
     }
  
     /* Nosotros - Frase movimiento desktop */
