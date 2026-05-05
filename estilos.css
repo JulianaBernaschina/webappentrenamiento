@@ -729,6 +729,9 @@ footer button {
  
 /* ESTILOS DESKTOP */
 @media (min-width: 760px) {
+
+ p{ 
+  font-size:18px}
  
     /* Header desktop */
     header {
