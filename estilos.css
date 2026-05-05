@@ -787,7 +787,8 @@ footer button {
     }
  
     .enfoque {
-        padding: 32px;
+        padding: 32px 10px;
+     padding-top:20px;
     }
  
     .enfoque:first-of-type {
@@ -814,7 +815,7 @@ footer button {
     }
  
     .recurso-item {
-        padding: 16px 0;
+        padding: 20px 10px;
     }
  
     #recursos a {
