@@ -1043,5 +1043,14 @@ flex-direction: column;
      gap:5px;
      margin-left:30px;
     }
+#foot { 
+ display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+	align-content: flex-start;
+ margin:10px;
+}
 
   }
