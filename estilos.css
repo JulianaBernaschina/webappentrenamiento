@@ -1006,11 +1006,15 @@ padding-top: 100px;
  
     #contacto-redes {
         display:flex;
-     flex-direction:row;
+     flex-direction:column;
      margin:10px;
      gap:6px;
     }
- 
+ #contacto-redes > ul {
+  display:flex;
+     flex-direction:column;
+     gap:6px;
+ }
     #footer {
     
         border-top: none;
