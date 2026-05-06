@@ -988,41 +988,39 @@ padding-top: 100px;
     footer {
         padding: 40px 40px 24px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "logo  form"
-            "redes nav"
-            "redes nav";
+        grid-template-columns: 1fr 1fr
         gap: 24px 40px;
     }
  
     footer > a {
-        grid-area: logo;
+       
         margin-bottom: 0;
     }
  
     footer form {
-        grid-area: form;
+       
         max-width: 500px;
         margin: 0;
         padding: 32px;
     }
  
     #contacto-redes {
-        grid-area: redes;
-        margin-bottom: 0;
+        display:flex;
+     margin-bottom: 0;
     }
  
     #footer {
-        grid-area: nav;
+    
         border-top: none;
         padding-top: 0;
     }
  
     #footer > ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+    flex-direction:column;
         gap: 24px;
+     margin:10px;
+     
     }
  
     #footer > ul > li > a {
