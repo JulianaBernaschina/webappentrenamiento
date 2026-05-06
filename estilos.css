@@ -1006,7 +1006,9 @@ padding-top: 100px;
  
     #contacto-redes {
         display:flex;
-     margin-bottom: 0;
+     flex-direction:row;
+     margin:10px;
+     gap:6px;
     }
  
     #footer {
