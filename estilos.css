@@ -1026,6 +1026,9 @@ padding-top: 100px;
     #footer > ul > li > a {
         font-size: 13px;
         letter-spacing: 0.15em;
+     display:flex;
+     flex-direction:column;
+     gap:5px;
     }
 
   }
