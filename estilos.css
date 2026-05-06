@@ -1032,6 +1032,7 @@ flex-direction: column;
     flex-direction:row;
         gap: 24px;
      margin:10px;
+		margin-right: 50px;
      
     }
  
