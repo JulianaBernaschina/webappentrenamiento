@@ -1047,7 +1047,7 @@ flex-direction: column;
  display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: baseline;
 	align-content: flex-start;
  margin:10px;
