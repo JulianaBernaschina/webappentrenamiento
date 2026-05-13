@@ -863,7 +863,7 @@ gap: 10px;
 }
  
 #anotate h2 {
-    color: #5abf9a;
+    color: #927aaa;
     font-size: 55px;
     font-weight: 900;
     text-transform: uppercase;
@@ -1242,6 +1242,7 @@ padding-top: 100px;
     /* Anotate desktop */
     #anotate {
         padding: 48px 40px;
+		color: #927aaa;
     }
  
     #anotate h2 {
