@@ -991,7 +991,7 @@ padding-top: 100px;
     footer {
         padding: 40px 40px 24px;
         display: grid;
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
         gap: 24px 40px;
     }
  
@@ -1020,7 +1020,7 @@ display: flex;
 gap: 8px;
 flex-direction: column;
 }
- }
+ 
     #footer {
     
         border-top: none;
