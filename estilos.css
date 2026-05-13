@@ -1310,23 +1310,32 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 28px;
 }
 
 footer > a {
     flex: 0 0 100%;
-    margin-bottom: 0;
+    order: 0;
+    margin-bottom: 28px;
 }
 
 footer form {
-    flex: 0 0 100%;
-    min-width: 100%;       /* ← fuerza renglón propio en cualquier pantalla */
+    order: 1;
+    width: 100%;
     max-width: 660px;
     margin: 0 auto;
+    margin-bottom: 28px;
     padding: 32px;
 }
 
+/* separador invisible: ocupa un renglón entero entre el form y el contacto */
+footer::after {
+    content: '';
+    flex: 0 0 100%;
+    order: 2;
+}
+
 #contacto-redes {
+    order: 3;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -1342,6 +1351,7 @@ footer form {
 }
 
 #footer {
+    order: 3;
     flex: 1;
     border-top: none;
     padding-top: 0;
@@ -1362,7 +1372,6 @@ footer form {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-left: 0;
     margin-top: 8px;
 }
 
