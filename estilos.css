@@ -953,7 +953,17 @@ gap: 10px;
     header {
         padding: 20px 40px;
     }
- 
+
+/* HAMBURGUESA */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:2rem;
+    cursor:pointer;
+}
+	
     #logo img {
         height: 50px;
     }
