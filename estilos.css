@@ -84,10 +84,15 @@ header {
     height: 40px;
     width: auto;
 }
-     .menu-toggle{
-        display:block;
-    }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+}
+ 
 nav ul li a {
     display: block;
     padding: 10px 14px;
@@ -106,26 +111,6 @@ nav ul li a:hover {
     border-radius: 8px;
     color: #054035;
     font-weight: 500;
-}
-    nav{
-        display:none;
-
-        position:absolute;
-        top:80px;
-        right:20px;
-
-        background:white;
-        padding:20px;
-    }
-
-    nav.active{
-        display:block;
-    }
-
-    nav ul{
-        flex-direction:column;
-        gap:15px;
-    }
 }
 
 /* HOME mobile */
