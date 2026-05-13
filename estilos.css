@@ -1254,6 +1254,7 @@ padding-top: 100px;
     }
  #anotate iframe {
         max-width: 1000px;
+        align-content: center;
     }
     /* Anotate desktop */
     #anotate {
