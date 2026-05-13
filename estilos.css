@@ -932,10 +932,14 @@ gap: 10px;
     filter: grayscale(100%);
     display: block;
 }
- 
+ @media (min-width: 500px) {
+    h1,h2,h3 { 
+        font-size: 70px;
+    }
+ }
 
 /* ESTILOS DESKTOP */
-@media (min-width: 760px) {
+@media (min-width: 960px) {
 
  p{ 
   font-size:18px;
