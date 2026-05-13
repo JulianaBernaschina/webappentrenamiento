@@ -1320,7 +1320,7 @@ footer {
     padding: 40px 40px 24px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 footer > a {
