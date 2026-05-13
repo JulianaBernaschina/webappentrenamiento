@@ -111,15 +111,6 @@ nav ul li a:hover {
 /* HOME mobile */
 
 
-/* HAMBURGUESA */
-
-.menu-toggle{
-    display:none;
-    background:none;
-    border:none;
-    font-size:2rem;
-    cursor:pointer;
-}
  
 /* Movimiento consciente */
 #movimiento h1 {
