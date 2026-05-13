@@ -730,6 +730,216 @@ gap: 10px;
     font-weight: 400;
 }
  
+/* ── AGENDA mobile ── */
+ 
+/* Título nuestros programas */
+#programas h2 {
+    background-color: #c2ecd9;
+    color: #5abf9a;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 14px 20px;
+    line-height: 1;
+}
+ 
+/* Cards de programas */
+.programas-cards {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.programa-card {
+    padding: 24px 20px;
+    background: #fff;
+    border-bottom: 1px solid #b8d9cb;
+}
+ 
+.programa-card:last-child {
+    border-bottom: none;
+}
+ 
+.programa-card h3 {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #111;
+    margin: 0 0 12px;
+}
+ 
+.programa-card p {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+ 
+.programa-card a {
+    display: inline-block;
+    background-color: #7de8c8;
+    color: #054035;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 10px;
+    letter-spacing: 0.08em;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+}
+ 
+/* Imagen agenda */
+#agendaimagen {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    display: block;
+}
+ 
+/* Test de programas */
+#test {
+    background-color: #dff0e8;
+    padding: 28px 20px;
+}
+ 
+#test h5 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #5abf9a;
+    margin: 0 0 14px;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+ 
+#pregunta {
+    font-size: 22px;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 18px;
+    line-height: 1.3;
+}
+ 
+#opciones ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 20px;
+    list-style: none;
+    padding: 0;
+}
+ 
+#opciones ul li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-family: "Geist", sans-serif;
+    transition: border-color 0.15s;
+}
+ 
+#opciones ul li:hover {
+    border-color: #7de8c8;
+}
+ 
+#btn {
+    background-color: #7de8c8;
+    color: #054035;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+    display: block;
+}
+ 
+/* Anotate */
+#anotate {
+    background-color: #ddd6f0;
+    padding: 28px 20px;
+}
+ 
+#anotate h2 {
+    color: #5abf9a;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+    line-height: 1;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+ 
+#anotate h4 {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 22px;
+    font-weight: 400;
+    font-family: "Geist", sans-serif;
+}
+ 
+#anotate iframe {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    display: block;
+}
+ 
+/* Galería */
+#galeria {
+    padding: 24px 20px;
+    background: #fff;
+}
+ 
+#galeria h2 {
+    color: #927aaa;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+    line-height: 1;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+ 
+#galeria h4 {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 16px;
+    font-weight: 400;
+    font-family: "Geist", sans-serif;
+}
+ 
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ 
+.galeria-grid li {
+    overflow: hidden;
+    border-radius: 6px;
+}
+ 
+.galeria-grid li img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    display: block;
+}
+ 
+
 /* ESTILOS DESKTOP */
 @media (min-width: 760px) {
 
@@ -986,7 +1196,91 @@ padding-top: 100px;
     summary {
         font-size: 22px;
     }
+ /* ── AGENDA desktop  ── */
+    /* Programas desktop */
+    #programas h2 {
+        font-size: 100px;
+        padding: 16px 32px;
+    }
  
+    .programas-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .programa-card {
+        padding: 40px 32px;
+        border-bottom: none;
+    }
+ 
+    .programa-card:first-child {
+        border-right: 1px solid #b8d9cb;
+    }
+ 
+    .programa-card h3 {
+        font-size: 22px;
+    }
+ 
+    .programa-card p {
+        font-size: 18px;
+    }
+ 
+    /* Imagen agenda desktop */
+    #agendaimagen {
+        height: 420px;
+    }
+ 
+    /* Test desktop */
+    #test {
+        padding: 48px 40px;
+    }
+ 
+    #pregunta {
+        font-size: 28px;
+        max-width: 640px;
+    }
+ 
+    #opciones ul li {
+        font-size: 18px;
+        padding: 16px 20px;
+    }
+ 
+    /* Anotate desktop */
+    #anotate {
+        padding: 48px 40px;
+    }
+ 
+    #anotate h2 {
+        font-size: 100px;
+    }
+ 
+    #anotate h4 {
+        font-size: 18px;
+    }
+ 
+    #anotate iframe {
+        max-width: 700px;
+    }
+ 
+    /* Galería desktop */
+    #galeria {
+        padding: 40px 40px;
+    }
+ 
+    #galeria h2 {
+        font-size: 100px;
+    }
+ 
+    .galeria-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+ 
+    .galeria-grid li img {
+        height: 160px;
+    }
+ 
+
     /* Footer desktop */
     footer {
         padding: 40px 40px 24px;
