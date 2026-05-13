@@ -1,3 +1,55 @@
+
+Claude terminó la respuesta
+Dijiste: codea en el css del mismo modo que ya esta las nuevas paginas en desktop y mobile, tiene en cuenta que hay un iframe, repstealo y no cambies casi el html
+Captura de pantalla 2026-05-13 a las 08.50.33.png
+
+/* fuentes */ @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Geist:wght@100..900&display=swap'); /* ESTILOS BASE */ * { box-sizing: border-box; } body { margin: 0; padding: 0; font-family: "Geist", sans-serif; } p {
+PASTED
+
+<!DOCTYPE html> <html lang="es"> <head> <meta charset = "UTF-8"> <title>cuerpo presente</title> <link rel="stylesheet" href="../estilos.css"> <meta name="viewport" content="width=device-width, initial-scale=1" /> </head> <body> <heade
+PASTED
+codea en el css del mismo modo que ya esta las nuevas paginas en desktop y mobile, tiene en cuenta que hay un iframe, repstealo y no cambies casi el html
+8:53 a.m.
+Claude respondió: Analicé bien el diseño.
+
+Analizó diseño responsive, estructuró componentes y planificó CSS minimalista
+Analizó diseño responsive, estructuró componentes y planificó CSS minimalista
+Analicé bien el diseño. Veo los patrones: título en mint, cards de programas en 2 columnas desktop, sección test en verde, Anotate en lila, galería en 3/4 columnas. Voy a agregar el CSS siguiendo exactamente el sistema ya existente, con cambios mínimos al HTML (solo 4 wrappers para habilitar el grid y los fondos).
+
+Deliberó sobre crear archivos CSS y HTML completos con estilos responsivos
+Deliberó sobre crear archivos CSS y HTML completos con estilos responsivos
+Voy a crear el CSS con las adiciones y el HTML con los wrappers mínimos.
+
+Preparó modificaciones HTML mínimas con envoltorios adicionales
+Preparó modificaciones HTML mínimas con envoltorios adicionales
+Qué hice y por qué:
+CSS (agenda-css-additions.css) — pegalo al final de estilos.css. El bloque @media de adentro lo fusionás con el que ya tenés. Sigue exactamente el mismo sistema:
+#programas h2 → mismo patrón que #nuestros h2 (mint bg / teal text, 55px mobile → 100px desktop)
+.programas-cards → flex-direction: column mobile, grid 1fr 1fr desktop, igual que .formacion-cols
+#test → fondo 
+#dff0e8 igual que #recursos
+#anotate h2 → 55px/100px, color 
+#5abf9a, igual que todos los títulos de sección
+#galeria → fondo blanco, 
+#927aaa para el h2, .galeria-grid en 3 cols mobile / 4 cols desktop
+HTML (indexagenda.html) — 4 cambios mínimos:
+class="actual" en el link de Agenda (nav activo, como en las otras páginas)
+div.programas-cards + div.programa-card → envuelve las dos tarjetas para habilitar el grid
+section#test → envuelve el quiz para darle fondo y padding
+section#galeria + class="galeria-grid" en la ul → habilita el grid de imágenes
+
+Agenda css additions
+Código · CSS 
+
+Indexagenda
+Código · HTML 
+
+
+
+Claude es IA y puede cometer errores. Por favor, verifica nuevamente las respuestas.
+Indexagenda · HTML
+Copiar
+
 <!DOCTYPE html>
 <html lang="es">
  <head>
@@ -15,7 +67,7 @@
                 <ul>
                 <li> <a href= "../index.html"> Inicio </a></li>
                 <li> <a href= "../nosotros/indexnosotros.html"> Contenidos</a></li>
-                <li><a id="archivocarpeta" href= "indexagenda.html"> Agenda</a></li>
+                <li><a class="actual" href= "indexagenda.html"> Agenda</a></li>
                     </ul>
                 </nav> 
     </header> 
@@ -23,70 +75,87 @@
     
         <section id="programas">
         <h2> Nuestros programas </h2>
-        <h3> Experiencia corporal consciente </h3>
  
-        <p> A través de un proceso de acompañamiento, vas a desarrollar mayor conciencia corporal, regular mejor tus niveles de exigencia y construir un hábito de movimiento más amable, posible y duradero.
-         <strong> Este enfoque permite dejar de empezar y abandonar, y comenzar a sostener el movimiento como parte de tu vida.</strong></p>
-          <li> <a href="#anotate"> Anotate </a></li>
+        <!-- WRAPPER MÍNIMO: permite el grid de 2 cols en desktop -->
+        <div class="programas-cards">
+ 
+          <div class="programa-card">
+            <h3> Experiencia corporal consciente </h3>
+            <p> A través de un proceso de acompañamiento, vas a desarrollar mayor conciencia corporal, regular mejor tus niveles de exigencia y construir un hábito de movimiento más amable, posible y duradero.
+             <strong> Este enfoque permite dejar de empezar y abandonar, y comenzar a sostener el movimiento como parte de tu vida.</strong></p>
+            <a href="#anotate"> Anotate </a>
+          </div>
+ 
+          <div class="programa-card">
+            <h3> Rol profesional presente</h3>
+            <p> El rol profesional presente implica ir más allá de planificar ejercicios y empezar a diseñar procesos que generen impacto real y continuidad en las personas. <strong> Este espacio propone desarrollar herramientas concretas para observar, interpretar y acompañar esos procesos, integrando lo corporal, lo emocional y lo vincular en la práctica profesional.</strong></p>
+            <a href="#anotate"> Anotate</a>
+          </div>
+ 
+        </div>
         </section>
-        <h3> Rol profesional presente</h3>
-        <p> El rol profesional presente implica ir más allá de planificar ejercicios y empezar a diseñar procesos que generen impacto real y continuidad en las personas. <strong> Este espacio propone desarrollar herramientas concretas para observar, interpretar y acompañar esos procesos, integrando lo corporal, lo emocional y lo vincular en la práctica profesional.</strong>
-        </p>
-        <section>
-          <li> <a href="#anotate"> Anotate</a></li>
-        </section>
-     
-      <img src="../img/vitaly-gariev-TbcntdBk5b8-unsplash.jpg" width="auto" height="150" alt="imagen mujer haciendo ejercicio con un coach personal">
+ 
+      <img id="agendaimagen" src="../img/vitaly-gariev-TbcntdBk5b8-unsplash.jpg" alt="imagen mujer haciendo ejercicio con un coach personal">
       
-<h5> Test de programas</h5>
-   
-  <h4 id="pregunta"> ¿Qué sentís que te está faltando hoy en tu relación con el movimiento?  </h4>
-  <div id="opciones">
-   <ul>
-     <li> Sentir más conexión con mi cuerpo y dejar de exigirme tanto </li>
-     <li> Tener herramientas para acompañar mejor a otras personas </li>
-     <li> Entender por qué me cuesta sostener lo que empiezo </li>
-    </ul>
-    <button id="btn" submit="siguiente()"> Continuar </button>
-  </div>
-
+      <!-- WRAPPER MÍNIMO: permite el fondo y el padding de la sección test -->
+      <section id="test">
+        <h5> Test de programas</h5>
+        <h4 id="pregunta"> ¿Qué sentís que te está faltando hoy en tu relación con el movimiento?  </h4>
+        <div id="opciones">
+         <ul>
+           <li> Sentir más conexión con mi cuerpo y dejar de exigirme tanto </li>
+           <li> Tener herramientas para acompañar mejor a otras personas </li>
+           <li> Entender por qué me cuesta sostener lo que empiezo </li>
+          </ul>
+          <button id="btn" onclick="siguiente()"> Continuar </button>
+        </div>
+      </section>
+ 
      <div id="anotate">
-     <h2> Anotate </h2> 
-     <h4> Agenda tu consulta acá! </h4>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://calendly.com/juliana-bernaschina-comunidad/30min" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   </section>
-      <h2> Galería</h2>
-      <h4> Experiencias que sanan </h4>
-     <ul>
-    <li>  <img src="../img/dylan-nolte-ITDjGji__6Y-unsplash.jpg" width="auto" height="150" alt ="Persona saltando la soga"> </li>
-     <li> <img src="../img/lucy-dunne-XqAhTH3EBnw-unsplash.jpg" width="auto" height="150" alt ="Mujer contenta levantando peso"></li>
-     <li> <img src="../img/sam-sabourin-PiFA6HIAfBA-unsplash.jpg" width="auto" height="150" alt ="Hombre haciendo sentadilla con barra"></li>
-     <li> <img src="../img/annie-spratt-bbbbAoa8lHY-unsplash.jpg" width="auto" height="150" alt ="Hombre ayudando a elongar a otro"></li>
-     <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.17.50.jpeg" width="auto" height="150" alt ="Dos personas haciendo sentadilla"></li>
-     <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.17.51.jpeg" width="auto" height="150" alt ="Dos personas haciendo sentadilla a una pierna"></li>
-     <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.18.43.jpeg" width="auto" height="150" alt ="Entrenador hablando con persona mientras entrena"></li>
-     </ul>
+       <h2> Anotate </h2> 
+       <h4> Agenda tu consulta acá! </h4>
+       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://calendly.com/juliana-bernaschina-comunidad/30min" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+     </div>
+ 
+      <!-- WRAPPER MÍNIMO: permite el fondo y el grid de la galería -->
+      <section id="galeria">
+        <h2> Galería</h2>
+        <h4> Experiencias que sanan </h4>
+        <ul class="galeria-grid">
+          <li>  <img src="../img/dylan-nolte-ITDjGji__6Y-unsplash.jpg" alt ="Persona saltando la soga"> </li>
+          <li> <img src="../img/lucy-dunne-XqAhTH3EBnw-unsplash.jpg" alt ="Mujer contenta levantando peso"></li>
+          <li> <img src="../img/sam-sabourin-PiFA6HIAfBA-unsplash.jpg" alt ="Hombre haciendo sentadilla con barra"></li>
+          <li> <img src="../img/annie-spratt-bbbbAoa8lHY-unsplash.jpg" alt ="Hombre ayudando a elongar a otro"></li>
+          <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.17.50.jpeg" alt ="Dos personas haciendo sentadilla"></li>
+          <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.17.51.jpeg" alt ="Dos personas haciendo sentadilla a una pierna"></li>
+          <li> <img src="../img/WhatsApp Image 2026-03-31 at 18.18.43.jpeg" alt ="Entrenador hablando con persona mientras entrena"></li>
+        </ul>
+      </section>
+ 
      </main>
     <footer>
-
+ 
    <a href="../index.html">  <img src="../img/logocuerpo-01.png" width="auto" height="150" alt="logo"> </a>
-            <h4> Envianos tu consulta</h4>
-         <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST" novalidate>
+            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST" novalidate>
+              <h4> Envianos tu consulta</h4>
   <label for="email"></label> <br>
   <input type="email" id="email" name="email" placeholder="tuemail@correo.com" required><br><br>
-
+ 
   <label for="message"></label> <br>
   <textarea id="message" name="message" rows="5" placeholder="Motivo de consulta" required></textarea>
-
+ 
   <button type="submit">Enviar</button>
 </form>
-            <h5> Contacto</h5> <p> También podes visitar nuestras redes!</p>
+            <div id="contacto-redes">
+            <h4> Contacto</h4> <p> También podes visitar nuestras redes!</p>
          <ul> 
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> instagram </a></li>
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> linkedin </a></li>
          <li> <a href="https://www.instagram.com/cuerpopresente_/" target="_blank"> x </a></li>
          </ul>
+         </div>
          <nav id="footer">
+         <div id="foot">
             <ul> 
                 <li> <a href="../index.html"> Inicio </a>
                 </li>
@@ -94,10 +163,11 @@
               </li>
                  <li> <a href="indexagenda.html"> Agenda </a>
                 <ul> 
-                    <li><a href="#programas">  Nuestros programas </li>
-                    <li> <a href="#anotate">  Anotate  </li>
+                    <li><a href="#programas">  Nuestros programas </a></li>
+                    <li> <a href="#anotate">  Anotate </a></li>
                 </ul></li>
             </ul>
+         </div>
           </nav>
         </footer>        
 </body>
