@@ -88,6 +88,12 @@ header {
         display:block;
     }
 
+ nav ul li a.actual {
+    background-color: rgba(139, 238, 197, 1);
+    border-radius: 8px;
+    color: #054035;
+    font-weight: 500;
+}
     nav{
         display:none;
 
