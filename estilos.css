@@ -112,7 +112,28 @@ nav ul li a:hover {
     color: #054035;
     font-weight: 500;
 }
-
+#menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+ 
+#menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+}
+ 
+nav {
+    display: none;
+}
 /* HOME mobile */
 
 
@@ -947,7 +968,13 @@ gap: 10px;
 
 /* ESTILOS DESKTOP */
 @media (min-width: 960px) {
-
+#menu-toggle {
+    display: none;
+}
+ 
+nav {
+    display: block;
+}
  p{ 
   font-size:18px;
  }
@@ -959,22 +986,13 @@ gap: 10px;
 
 /* HAMBURGUESA */
 
-.menu-toggle{
-    display:none;
-    background:none;
-    border:none;
-    font-size:2rem;
-    cursor:pointer;
+#menu-toggle {
+    display: none;
 }
-	
-    #logo img {
-        height: 50px;
-    }
  
-    nav ul li a {
-        padding: 12px 32px;
-        font-size: 13px;
-    }
+nav {
+    display: block;
+}
  
     /* Movimiento desktop */
     #movimiento h1 {
