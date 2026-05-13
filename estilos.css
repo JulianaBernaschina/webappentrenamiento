@@ -1325,6 +1325,7 @@ footer > a {
 
 footer form {
     flex: 0 0 100%;
+    min-width: 100%;       /* ← fuerza renglón propio en cualquier pantalla */
     max-width: 660px;
     margin: 0 auto;
     padding: 32px;
