@@ -88,6 +88,19 @@ header {
         display:block;
     }
 
+nav ul li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #333;
+    white-space: nowrap;
+}
+ 
+nav ul li a:hover {
+    color: #666;
+}
  nav ul li a.actual {
     background-color: rgba(139, 238, 197, 1);
     border-radius: 8px;
