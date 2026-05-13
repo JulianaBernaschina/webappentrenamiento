@@ -1348,7 +1348,7 @@ footer > a {
 footer form {
     order: 1;
 
-    max-width: 660px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 28px;
     padding: 32px;
