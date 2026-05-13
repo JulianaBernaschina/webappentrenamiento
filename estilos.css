@@ -964,6 +964,13 @@ gap: 10px;
     h1,h2,h3 { 
         font-size: 70px;
     }
+    #menu-toggle {
+    display: none;
+}
+ 
+nav {
+    display: block;
+}
  }
 
 /* ESTILOS DESKTOP */
