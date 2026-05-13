@@ -147,7 +147,7 @@ nav {
     text-transform: uppercase;
     margin: 0;
     padding: 16px 20px;
-    text-align: center;
+  
     line-height: 1;
 }
  
@@ -213,7 +213,7 @@ nav {
     margin: 0;
     padding: 14px 20px;
     line-height: 1;
-    text-align: center;
+  
 }
  
 .enfoque {
@@ -962,7 +962,9 @@ gap: 10px;
 }
  @media (min-width: 500px) {
     h1,h2,h3 { 
+        display: flex;
         font-size: 70px;
+        flex-wrap:nowrap ;
     }
     #menu-toggle {
     display: none;
