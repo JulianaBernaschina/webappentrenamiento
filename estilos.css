@@ -1341,12 +1341,11 @@ footer > a {
 footer form {
     order: 1;
 
-    max-width: 1000px;
+    min-width: 1000px;
     margin: 0 auto;
     margin-bottom: 28px;
     padding: 32px;
 }
-
 /* separador invisible: ocupa un renglón entero entre el form y el contacto */
 footer::after {
     content: '';
