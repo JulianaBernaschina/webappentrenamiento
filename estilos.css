@@ -1341,7 +1341,7 @@ footer > a {
 footer form {
     order: 1;
 
-    min-width: 1000px;
+    min-width: 800px;
     margin: 0 auto;
     margin-bottom: 28px;
     padding: 32px;
