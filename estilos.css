@@ -1301,8 +1301,8 @@ padding-top: 100px;
         font-size: 18px;
     }
  #anotate iframe {
-    display: block;
-        min-width: 700px;
+    display: flex;
+        min-width: 800px;
         align-content: center;
     }
     /* Anotate desktop */
